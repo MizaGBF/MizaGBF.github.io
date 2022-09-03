@@ -9,12 +9,10 @@ function load()
     {
         let elem = calc.split('x');
         document.getElementById("gwut1").value = elem[0];
-        document.getElementById("gwut1b").value = elem[1];
-        document.getElementById("gwut2").value = elem[2];
-        document.getElementById("gwut3").value = elem[3];
-        document.getElementById("gwut4").value = elem[4];
-        document.getElementById("gwut5").value = elem[5];
-        document.getElementById("gwut6").value = elem[6];
+        document.getElementById("gwut2").value = elem[1];
+        document.getElementById("gwut4").value = elem[2];
+        document.getElementById("gwut5").value = elem[3];
+        document.getElementById("gwut6").value = elem[4];
         calculator();
     }
     var spe = params.get("speed");
@@ -34,9 +32,7 @@ function load()
 function calc_enable()
 {
     document.getElementById("gwut1").disabled = false;
-    document.getElementById("gwut1b").disabled = false;
     document.getElementById("gwut2").disabled = false;
-    document.getElementById("gwut3").disabled = false;
     document.getElementById("gwut4").disabled = false;
     document.getElementById("gwut5").disabled = false;
     document.getElementById("gwut6").disabled = false;
@@ -48,9 +44,7 @@ function calc_disable()
 {
     calc_enabled = false;
     document.getElementById("gwut1").disabled = true;
-    document.getElementById("gwut1b").disabled = true;
     document.getElementById("gwut2").disabled = true;
-    document.getElementById("gwut3").disabled = true;
     document.getElementById("gwut4").disabled = true;
     document.getElementById("gwut5").disabled = true;
     document.getElementById("gwut6").disabled = true;
@@ -90,7 +84,7 @@ function calculator()
     if(!calc_enabled) return;
     calc_disable();
     let inputs = [];
-    for(let id of ["gwut1", "gwut1b", "gwut2", "gwut3", "gwut4", "gwut5", "gwut6"])
+    for(let id of ["gwut1", "gwut2", "gwut4", "gwut5", "gwut6"])
     {
         let tmp = getIntegerInput(id)
         if(tmp == null)
@@ -101,30 +95,37 @@ function calculator()
         }
         inputs.push(tmp);
     }
-    if(inputs[5] > 0)
+    if(inputs[3] > 0)
     {
-        switch(inputs[4])
+        let base = [
+            ['★', 20, 52, 320], // name, AP, tokens, honors
+            ['★★', 30, 70, 788],
+            ['★★★', 40, 97, 3730],
+            ['★★★★', 50, 146, 20330],
+            ['★★★★★', 50, 243, 41000]
+        ];
+        switch(inputs[2])
         {
             case 0:
             {
-                let token = Math.max(inputs[5] - Math.max(inputs[1], 0) - Math.max(inputs[0], 0), 0);
-                let box = Math.max(inputs[2], 1) - 1;
+                let token = Math.max(inputs[3] - Math.max(inputs[0], 0), 0);
+                let box = Math.max(inputs[1], 1) - 1;
                 if(box == 0 && token >= 1600)
                 {
                     token -= 1600;
                     box += 1;
                 }
-                while(box < 4 && token >= 2400)
+                while(box < 4 && token >= 2404)
                 {
-                    token -= 2400;
+                    token -= 2404;
                     box += 1;
                 }
-                while(box < 46 & token >= 2000)
+                while(box < 20 & token >= 2000)
                 {
                     token -= 2000;
                     box += 1;
                 }
-                while(box < 81 & token >= 10000)
+                while(box < 40 & token >= 10000)
                 {
                     token -= 10000;
                     box += 1;
@@ -134,41 +135,27 @@ function calculator()
                     token -= 15000;
                     box += 1;
                 }
-                let base = [
-                    ['EX', 30, 0, 56, 3.06], // name, AP, meat, tokens, FR token
-                    ['EX+', 30, 0, 66, 4.85],
-                    ['NM90', 30, 5, 83, 15.6],
-                    ['NM95', 40, 10, 111, 54.6],
-                    ['NM100', 50, 20, 168, 159],
-                    ['NM150', 50, 20, 257, 246],
-                    ['NM200', 50, 30, 338, 612]
-                ];
                 let e = document.getElementById("calc-result");
-                e.appendChild(document.createTextNode(separate(inputs[5]) + " more Tokens will give you " + separate(box - Math.max(inputs[2], 1) + 1) + " more box(s) (Total: " + separate(box) + "), with " + separate(token) + " leftover tokens."));
+                e.appendChild(document.createTextNode(separate(inputs[3]) + " more Tokens will give you " + separate(box - Math.max(inputs[1], 1) + 1) + " more box(s) (Total: " + separate(box) + "), with " + separate(token) + " leftover tokens."));
                 e.appendChild(document.createElement("br"));
                 e.appendChild(document.createElement("br"));
-                let meat = Math.max(inputs[3], 0);
                 for(let bv of base)
                 {
-                    let v = Math.ceil(inputs[5] / (bv[3]+bv[4]));
+                    let v = Math.ceil(inputs[3] / (bv[2]));
                     let li = document.createElement("li");
                     e.appendChild(li);
-                    let m = Math.max(v*bv[2]-meat, 0);
-                    if(m <= 0)
-                        li.appendChild(document.createTextNode(separate(v) + " " + bv[0] + " (Need " + separate(v*bv[1]) + " AP)."));
-                    else
-                        li.appendChild(document.createTextNode(separate(v) + " " + bv[0] + " (Need " + separate(v*bv[1]) + " AP, " + separate(m) + " meats)."));
+                    li.appendChild(document.createTextNode(separate(v) + " " + bv[0] + " (Need " + separate(v*bv[1]) + " AP) for " + separate(v*bv[3]) + " Honors."));
                 }
                 e.appendChild(document.createElement("br"));
-                if(inputs[0] + inputs[1] + meat > 0)
-                    e.appendChild(document.createTextNode("Owned tokens/meats and final rally tokens have been deducted."));
+                if(inputs[0] > 0)
+                    e.appendChild(document.createTextNode("Owned tokens have been deducted."));
                 break
             }
             case 1:
             {
-                let target_box = Math.max(inputs[5], 0);
+                let target_box = Math.max(inputs[3], 0);
                 let token = 0;
-                let box = Math.max(inputs[2], 1);
+                let box = Math.max(inputs[1], 1);
                 for(; box <= target_box; box++)
                 {
                     if(box == 1) token+= 1600;
@@ -177,7 +164,7 @@ function calculator()
                     else if(box <= 80) token += 10000;
                     else token += 15000;
                 }
-                token -= Math.max(inputs[1], 0) + Math.max(inputs[0], 0);
+                token -= Math.max(inputs[0], 0);
                 let e = document.getElementById("calc-result");
                 if(token <= 0)
                 {
@@ -185,93 +172,35 @@ function calculator()
                 }
                 else
                 {
-                    let base = [
-                        ['EX', 30, 0, 56, 3.06], // name, AP, meat, tokens, FR token
-                        ['EX+', 30, 0, 66, 4.85],
-                        ['NM90', 30, 5, 83, 15.6],
-                        ['NM95', 40, 10, 111, 54.6],
-                        ['NM100', 50, 20, 168, 159],
-                        ['NM150', 50, 20, 257, 246],
-                        ['NM200', 50, 30, 338, 612]
-                    ];
                     let e = document.getElementById("calc-result");
-                    e.appendChild(document.createTextNode("To reach Box " + separate(inputs[5]) + ", you need " + separate(token) + " more Tokens."));
+                    e.appendChild(document.createTextNode("To reach Box " + separate(inputs[3]) + ", you need " + separate(token) + " more Tokens."));
                     e.appendChild(document.createElement("br"));
-                    let meat = Math.max(inputs[3], 0);
                     for(let bv of base)
                     {
-                        let v = Math.ceil(token / (bv[3]+bv[4]));
+                        let v = Math.ceil(token / (bv[2]));
                         let li = document.createElement("li");
                         e.appendChild(li);
-                        let m = Math.max(v*bv[2]-meat, 0);
-                        if(m <= 0)
-                            li.appendChild(document.createTextNode(separate(v) + " " + bv[0] + " (Need " + separate(v*bv[1]) + " AP)."));
-                        else
-                            li.appendChild(document.createTextNode(separate(v) + " " + bv[0] + " (Need " + separate(v*bv[1]) + " AP, " + separate(m) + " meats)."));
+                        li.appendChild(document.createTextNode(separate(v) + " " + bv[0] + " (Need " + separate(v*bv[1]) + " AP)."));
                     }
-                    e.appendChild(document.createElement("br"));
-                    e.appendChild(document.createTextNode("Final rally is accounted for."));
                 }
                 break;
             }
-            case 2:
-            {
-                let meat = inputs[5];
-                let base = [
-                    ['NM90', 5, 260000],
-                    ['NM95', 10, 910000],
-                    ['NM100', 20, 2650000],
-                    ['NM150', 20, 4100000],
-                    ['NM200', 30, 10200000]
-                ];
-                let e = document.getElementById("calc-result");
-                e.appendChild(document.createTextNode(separate(meat) + " Meats let you host the following:"));
-                let myhonor = Math.max(inputs[6], 0);
-                for(let bv of base)
-                {
-                    let li = document.createElement("li");
-                    e.appendChild(li);
-                    let n = Math.floor(meat / bv[1]);
-                    let h = n * bv[2];
-                    if(myhonor > 0)
-                        li.appendChild(document.createTextNode(separate(n) + " " + bv[0] + " for " + separate(h) + " honors (Total: " + separate(h + myhonor) + ")."));
-                    else
-                        li.appendChild(document.createTextNode(separate(n) + " " + bv[0] + " for " + separate(h) + " honors."));
-                }
-                meat = Math.max(meat - Math.max(inputs[3], 0), 0);
-                if(meat > 0)
-                    e.appendChild(document.createTextNode("You need to kill ~" + separate(Math.ceil(meat / 6.2)) + " EX+ to reach this amount."));
-                break
-            }
             case 3:
             {
-                let honor = Math.max(inputs[5] - Math.max(inputs[6], 0), 0);
-                let base = [
-                    ['EX', 0, 51000],
-                    ['EX+', 0, 80800],
-                    ['NM90', 5, 260000],
-                    ['NM95', 10, 910000],
-                    ['NM100', 20, 2650000],
-                    ['NM150', 20, 4100000],
-                    ['NM200', 30, 10200000]
-                ];
+                let honor = Math.max(inputs[3], 0);
                 let e = document.getElementById("calc-result");
-                if(inputs[5] < base[0][2])
-                    e.appendChild(document.createTextNode("Any fight will give you at least " + separate(inputs[5]) + " Honors."));
+                if(inputs[3] < base[0][3])
+                    e.appendChild(document.createTextNode("Any fight will give you at least " + separate(inputs[3]) + " Honors."));
                 else
-                    e.appendChild(document.createTextNode("To reach " + separate(inputs[5]) + " Honors, you can host the following:"));
+                    e.appendChild(document.createTextNode("To reach " + separate(inputs[3]) + " Honors, you can host the following:"));
                 for(let bv of base)
                 {
-                    let n = Math.floor(inputs[5] / bv[2]);
-                    let m = n * bv[1] - Math.max(inputs[3], 0);
+                    let n = Math.floor(inputs[3] / bv[3]);
                     if(n > 0)
                     {
                         let li = document.createElement("li");
                         e.appendChild(li);
-                        if(m > 0)
-                            li.appendChild(document.createTextNode(separate(n) + " " + bv[0] + " requiring " + separate(m) + " more meats."));
-                        else
-                            li.appendChild(document.createTextNode(separate(n) + " " + bv[0] + "."));
+                        li.appendChild(document.createTextNode(separate(n) + " " + bv[0] + " (Need " + separate(n*bv[1]) + " AP)."));
                     }
                 }
                 break;
@@ -362,11 +291,11 @@ function speed()
     if(inputs[0] == null) inputs[0] = 0;
     else inputs[0] = Math.max(inputs[0], 0);
     let fightdata = [
-        ["NM90", -30, -5, 260000, 83],
-        ["NM95", -40, -10, 910000, 111],
-        ["NM100", -50, -20, 2650000, 168],
-        ["NM150", -50, -20, 4100000, 257],
-        ["NM200", -50, -30, 10200000, 338]
+        ['★', -20, 52, 320], // name, AP, tokens, honors
+        ['★★', -30, 70, 788],
+        ['★★★', -40, 97, 3730],
+        ['★★★★', -50, 146, 20330],
+        ['★★★★★', -50, 243, 41000]
     ];
     let e = document.getElementById("speed-result");
     e.appendChild(document.createTextNode("Results for one hour of farming:"));
@@ -383,7 +312,7 @@ function speed()
         }
         else
         {
-            li.appendChild(document.createTextNode(fightdata[i-1][0] + ": " + reduceNumber(fightdata[i-1][3] * mod) + ", " + reduceNumber(fightdata[i-1][1] * mod) + " AP, " + reduceNumber(fightdata[i-1][4] * mod) + " Tokens, " + reduceNumber(fightdata[i-1][2] * mod) + " Meats"));
+            li.appendChild(document.createTextNode(fightdata[i-1][0] + ": " + reduceNumber(fightdata[i-1][3] * mod) + ", " + reduceNumber(fightdata[i-1][1] * mod) + " AP, " + reduceNumber(fightdata[i-1][2] * mod) + " Tokens"));
         }
     }
     var params = new URLSearchParams(window.location.search);

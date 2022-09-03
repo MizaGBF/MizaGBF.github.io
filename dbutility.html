@@ -16,13 +16,13 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/gwutility.css">
-    <script src="js/gwutility.js"></script>
+    <script src="js/dbutility.js"></script>
 </head>
 
 <body onload="load()">
     <a href="index.html" class="main-link"><h1><img src="assets/lyria.png" class="title-icon">&nbsp;Miza's GBF Resources</h1></a>
     <h2>
-        <div id="category-title"><img src="assets/gw.png" class="cat-icon">&nbsp;<b>Unite and Fight Utility</b></div>
+        <div id="category-title"><img src="assets/db.png" class="cat-icon">&nbsp;<b>Dread Barrage Utility</b></div>
         <details>
             <summary>Calculator</summary>
             <div id="category">
@@ -35,22 +35,13 @@
                     <input type="text" id="gwut1" name="token" value="0" placeholder="Your Tokens" onkeyup="if(event.key === 'Enter') calculator();">
                 </div>
                 <div>
-                    <label for="frtoken">Final Rally Tokens</label>
-                    <input type="text" id="gwut1b" name="frtoken" value="0" placeholder="Final Rally" onkeyup="if(event.key === 'Enter') calculator();">
-                </div>
-                <div>
                     <label for="posbox">Current Box</label>
                     <input type="text" id="gwut2" name="posbox" value="1" placeholder="Current Box" onkeyup="if(event.key === 'Enter') calculator();">
-                </div>
-                <div>
-                    <label for="posbox">Owned Meat</label>
-                    <input type="text" id="gwut3" name="posbox" value="0" placeholder="Your Meats" onkeyup="if(event.key === 'Enter') calculator();">
                 </div>
                 <div><label for="selection">Target</label></div>
                 <select id="gwut4" name="selection">
                     <option value="0">Token</option>
                     <option value="1">Box</option>
-                    <option value="2">Meat</option>
                     <option value="3">Honor</option>
                 </select>
                 <input type="text" id="gwut5" value="1" placeholder="How much?" onkeyup="if(event.key === 'Enter') calculator();">
@@ -70,23 +61,23 @@
                     <input type="text" id="gwut10" name="delay" value="" placeholder="Loading Time" onkeyup="if(event.key === 'Enter') speed();">
                 </div>
                 <div>
-                    <label for="nm90">NM90</label>
+                    <label for="nm90">★</label>
                     <input type="text" id="gwut11" name="nm90" value="" placeholder="Clear Time" onkeyup="if(event.key === 'Enter') speed();">
                 </div>
                 <div>
-                    <label for="nm95">NM95</label>
+                    <label for="nm95">★★</label>
                     <input type="text" id="gwut12" name="nm95" value="" placeholder="Clear Time" onkeyup="if(event.key === 'Enter') speed();">
                 </div>
                 <div>
-                    <label for="nm100">NM100</label>
+                    <label for="nm100">★★★</label>
                     <input type="text" id="gwut13" name="nm100" value="" placeholder="Clear Time" onkeyup="if(event.key === 'Enter') speed();">
                 </div>
                 <div>
-                    <label for="nm150">NM150</label>
+                    <label for="nm150">★★★★</label>
                     <input type="text" id="gwut14" name="nm150" value="" placeholder="Clear Time" onkeyup="if(event.key === 'Enter') speed();">
                 </div>
                 <div>
-                    <label for="nm200">NM200</label>
+                    <label for="nm200">★★★★</label>
                     <input type="text" id="gwut15" name="nm200" value="" placeholder="Clear Time" onkeyup="if(event.key === 'Enter') speed();">
                 </div>
                 <button id="gwut2confirm" type="button" onclick="speed()">Compare</button>
