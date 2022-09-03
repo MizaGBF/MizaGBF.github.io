@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Miza's GBF Resources</title>
+    <meta name="title" content="Miza's GBF Resources">
+    <meta name="description" content="Miza's GBF Resources">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mizagbf.github.io/">
+    <meta property="og:title" content="Miza's GBF Resources">
+    <meta property="og:description" content="Miza's GBF Resources">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mizagbf.github.io/">
+    <meta property="twitter:title" content="Miza's GBF Resources">
+    <meta property="twitter:description" content="Miza's GBF Resources">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gwutility.css">
+    <script src="js/gwutility.js"></script>
+</head>
+
+<body onload="load()">
+    <a href="index.html" class="main-link"><h1><img src="assets/lyria.png" class="title-icon">&nbsp;Miza's GBF Resources</h1></a>
+    <h2>
+        <div id="category-title"><img src="assets/gw.png" class="cat-icon">&nbsp;<b>Unite and Fight Utility</b></div>
+        <details>
+            <summary>Calculator</summary>
+            <div id="category">
+                <div>
+                    <label for="token">Current Honor</label>
+                    <input type="text" id="gwut6" name="token" value="0" placeholder="Your Tokens" onkeyup="if(event.key === 'Enter') calculator();">
+                </div>
+                <div>
+                    <label for="token">Owned Tokens</label>
+                    <input type="text" id="gwut1" name="token" value="0" placeholder="Your Tokens" onkeyup="if(event.key === 'Enter') calculator();">
+                </div>
+                <div>
+                    <label for="frtoken">Final Rally Tokens</label>
+                    <input type="text" id="gwut1b" name="frtoken" value="0" placeholder="Final Rally" onkeyup="if(event.key === 'Enter') calculator();">
+                </div>
+                <div>
+                    <label for="posbox">Current Box</label>
+                    <input type="text" id="gwut2" name="posbox" value="1" placeholder="Current Box" onkeyup="if(event.key === 'Enter') calculator();">
+                </div>
+                <div>
+                    <label for="posbox">Owned Meat</label>
+                    <input type="text" id="gwut3" name="posbox" value="0" placeholder="Your Meats" onkeyup="if(event.key === 'Enter') calculator();">
+                </div>
+                <div><label for="selection">Target</label></div>
+                <select id="gwut4" name="selection">
+                    <option value="0">Token</option>
+                    <option value="1">Box</option>
+                    <option value="2">Meat</option>
+                    <option value="3">Honor</option>
+                </select>
+                <input type="text" id="gwut5" value="1" placeholder="How much?" onkeyup="if(event.key === 'Enter') calculator();">
+                <button id="gwut1confirm" type="button" onclick="calculator()">Calculate</button>
+            </div>
+            <div id="category">
+                <div id="calc-result">
+                    Please select what you want to calculate.
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary>Speed</summary>
+            <div id="category">
+                <div>
+                    <label for="delay">Loading Delay</label>
+                    <input type="text" id="gwut10" name="delay" value="" placeholder="Loading Time" onkeyup="if(event.key === 'Enter') speed();">
+                </div>
+                <div>
+                    <label for="nm90">NM90</label>
+                    <input type="text" id="gwut11" name="nm90" value="" placeholder="Clear Time" onkeyup="if(event.key === 'Enter') speed();">
+                </div>
+                <div>
+                    <label for="nm95">NM95</label>
+                    <input type="text" id="gwut12" name="nm95" value="" placeholder="Clear Time" onkeyup="if(event.key === 'Enter') speed();">
+                </div>
+                <div>
+                    <label for="nm100">NM100</label>
+                    <input type="text" id="gwut13" name="nm100" value="" placeholder="Clear Time" onkeyup="if(event.key === 'Enter') speed();">
+                </div>
+                <div>
+                    <label for="nm150">NM150</label>
+                    <input type="text" id="gwut14" name="nm150" value="" placeholder="Clear Time" onkeyup="if(event.key === 'Enter') speed();">
+                </div>
+                <div>
+                    <label for="nm200">NM200</label>
+                    <input type="text" id="gwut15" name="nm200" value="" placeholder="Clear Time" onkeyup="if(event.key === 'Enter') speed();">
+                </div>
+                <button id="gwut2confirm" type="button" onclick="speed()">Compare</button>
+            </div>
+            <div id="category">
+                <div id="speed-result">
+                    Input the clear times of fights you want to compare, in seconds.
+                </div>
+            </div>
+        </details>
+    </h2>
+    <h2 style="background-color: #000000e0">
+        Pro Tip: You can bookmark this page to save your results.
+    </h2>
+</body>
+</html>

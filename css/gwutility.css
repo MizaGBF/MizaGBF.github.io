@@ -1,0 +1,30 @@
+label {
+    color: white;
+    width: 170px;
+    display: inline-block;
+    margin: 5px;
+}
+
+input, select, button {
+    background-color: #ffffffb0;
+    border: 2px solid #000000;
+    margin: 5px;
+    width: 170px;
+    font-size: 25px;
+    display: inline-block;
+}
+
+button {
+    border-radius: 10px;
+}
+
+summary {
+    margin: 1em;
+}
+
+#calc-result, #speed-result {
+    color: white;
+    font-size: 20px;
+    background-color: #000000;
+    padding: 1em;
+}
