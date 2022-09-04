@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Miza's GBF Resources</title>
+    <meta name="title" content="Miza's GBF Resources">
+    <meta name="description" content="Miza's GBF Resources">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mizagbf.github.io/">
+    <meta property="og:title" content="Miza's GBF Resources">
+    <meta property="og:description" content="Miza's GBF Resources">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mizagbf.github.io/">
+    <meta property="twitter:title" content="Miza's GBF Resources">
+    <meta property="twitter:description" content="Miza's GBF Resources">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spark.css">
+    <script src="js/spark.js"></script>
+</head>
+
+<body onload="load()">
+    <a href="index.html" class="main-link"><h1><img src="assets/lyria.png" class="title-icon">&nbsp;Miza's GBF Resources</h1></a>
+    <h2>
+        <div id="category-title"><img src="assets/spark.png" class="cat-icon">&nbsp;<b>Spark Tracker</b></div>
+        <div id="category">
+            <div id="block">
+                <img src="assets/crystal.png" id="icon">
+                <input type="text" id="s1" name="token" value="0" placeholder="Your Tokens" onkeyup="if(event.key === 'Enter') calculator();">
+            </div>
+            <div id="block">
+                <img src="assets/singledraw.png" id="icon">
+                <input type="text" id="s2" name="token" value="0" placeholder="Your Tokens" onkeyup="if(event.key === 'Enter') calculator();">
+            </div>
+            <div id="block">
+                <img src="assets/tendraw.png" id="icon">
+                <input type="text" id="s3" name="frtoken" value="0" placeholder="Final Rally" onkeyup="if(event.key === 'Enter') calculator();">
+            </div>
+            <div id="block">
+                <img src="assets/shrimp.png" id="icon">
+                <input type="text" id="s4" name="posbox" value="0" placeholder="Current Box" onkeyup="if(event.key === 'Enter') calculator();">
+            </div>
+            <button id="sconfirm" type="button" onclick="calculator()">Calculate</button>
+        </div>
+        <div id="category">
+            <div id="calc-result">
+                Please select what you want to calculate.
+            </div>
+        </div>
+    </h2>
+    <h2 id="tip">
+        You can bookmark this page to save your spark status at today date.
+    </h2>
+</body>
+</html>

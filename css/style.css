@@ -81,3 +81,8 @@ a {
     border-radius: 50%;
     box-shadow: 0 0 0 2pt #000000
 }
+
+#tip {
+    background-color: #000000e0;
+    font-size: 16px;
+}
