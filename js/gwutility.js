@@ -240,7 +240,7 @@ function calculator()
                 }
                 meat = Math.max(meat - Math.max(inputs[3], 0), 0);
                 if(meat > 0)
-                    e.appendChild(document.createTextNode("You need to kill ~" + separate(Math.ceil(meat / 6.2)) + " EX+ to reach this amount."));
+                    e.appendChild(document.createTextNode("You need to kill ~" + separate(Math.ceil(meat / 7.6)) + " EX+ to reach this amount."));
                 break
             }
             case 3:
