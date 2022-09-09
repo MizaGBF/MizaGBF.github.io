@@ -163,7 +163,7 @@ function formatCell(column, content, type)
         {
             let ref = document.createElement('a');
             if(type == 1)
-                ref.setAttribute('href', "https://game.granbluefantasy.jp/#guild/" + content);
+                ref.setAttribute('href', "https://game.granbluefantasy.jp/#guild/detail/" + content);
             else
                 ref.setAttribute('href', "https://game.granbluefantasy.jp/#profile/" + content);
             ref.appendChild(document.createTextNode(content));
