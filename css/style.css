@@ -34,6 +34,18 @@ a {
     color: inherit;
 }
 
+#clock-icon {
+    max-width:24px;
+    position: relative;
+    top: 5px;
+}
+
+#clock {
+    display: inline-block;
+    font-size: 16px;
+    color:white;
+}
+
 #category-title {
     font-size: 40px;
     padding: 1em;
