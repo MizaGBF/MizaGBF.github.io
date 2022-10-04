@@ -1,0 +1,52 @@
+#percent_result > * > * > * {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px;
+    vertical-align:middle;
+}
+
+#percent_result > a > div {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#percent_result > a > div:hover {
+    background: #10101080;
+}
+
+#percent_value {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#percent_range {
+    appearance: none;
+    width: 500px;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#percent_range:hover {
+    background: #f0f0f0;
+}
+
+#percent_range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #f23857;
+    cursor: pointer;
+}
+
+#percent_range::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #f23857;
+    cursor: pointer;
+}
