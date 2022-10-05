@@ -131,7 +131,9 @@ function update_cost()
     let resultArea = document.getElementById("sim-cost");
     while(resultArea.childNodes.length > 0)
         resultArea.removeChild(resultArea.lastChild);
-    resultArea.appendChild(document.createTextNode("Total: " + total_ssr + " SSR " + (total_rateup === null ? "" : "(" + total_rateup + " rateups)") + " in " + total_roll + " rolls\nCost: " + (total_roll * 300) + " crystals or mobacoins"));
+    resultArea.appendChild(document.createTextNode("Total: " + total_ssr + " SSR " + (total_rateup === null ? "" : "(" + total_rateup + " rateups)") + " in " + total_roll + " rolls"));
+    resultArea.appendChild(document.createElement('br'));
+    resultArea.appendChild(document.createTextNode("\nCost: " + (total_roll * 300) + " crystals or mobacoins"));
 }
 
 function reset_cost()
