@@ -133,7 +133,7 @@ function update_cost()
         resultArea.removeChild(resultArea.lastChild);
     resultArea.appendChild(document.createTextNode("Total: " + total_ssr + " SSR " + (total_rateup === null ? "" : "(" + total_rateup + " rateups)") + " in " + total_roll + " rolls"));
     resultArea.appendChild(document.createElement('br'));
-    resultArea.appendChild(document.createTextNode("\nCost: " + (total_roll * 300) + " crystals or mobacoins"));
+    resultArea.appendChild(document.createTextNode("Cost: " + (total_roll * 300) + " crystals or mobacoins"));
 }
 
 function reset_cost()
