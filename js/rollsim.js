@@ -116,7 +116,7 @@ function display()
     else
     {
         if(anim_count % anim_mod != 0) res.appendChild(document.createElement('br'));
-        res.appendChild(document.createTextNode(sim['ssr'] + " SSR / " + sim['count'] + " (" + (Math.round(1000 * sim['ssr'] / sim['count']) / 10) + "%)" + (sim['rateup'] ? ", including " + sim['ssrr'] + " rateup(s)" : "")));
+        res.appendChild(document.createTextNode(sim['ssr'] + " SSR / " + sim['count'] + " rolls (" + (Math.round(1000 * sim['ssr'] / sim['count']) / 10) + "%)" + (sim['rateup'] ? ", including " + sim['ssrr'] + " rateup(s)" : "")));
         total_ssr += sim['ssr'];
         total_roll += sim['count'];
         if(sim['rateup']) total_rateup = (total_rateup === null) ? sim['ssrr'] : total_rateup + sim['ssrr'];
