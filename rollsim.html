@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Miza's GBF Resources</title>
+    <meta name="title" content="Miza's GBF Resources">
+    <meta name="description" content="Miza's GBF Resources">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mizagbf.github.io/">
+    <meta property="og:title" content="Miza's GBF Resources">
+    <meta property="og:description" content="Miza's GBF Resources">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mizagbf.github.io/">
+    <meta property="twitter:title" content="Miza's GBF Resources">
+    <meta property="twitter:description" content="Miza's GBF Resources">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rollsim.css">
+    <script src="js/clock.js"></script>
+    <script src="js/rollsim.js"></script>
+</head>
+
+<body>
+    <a href="index.html" class="main-link"><h1><img src="assets/lyria.png" class="title-icon">&nbsp;Miza's GBF Resources<br><img src="assets/clock.png" id="clock-icon"><div id="clock"></div></h1></a>
+    <h2>
+        <div id="category-title"><img src="assets/spark.png" class="cat-icon">&nbsp;<b>Gacha Simulator</b></div>
+        <div id="category">
+            <select id="roll-count">
+                <option value="1">1</option>
+                <option value="10" selected="selected">10</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="150">150</option>
+                <option value="200">200</option>
+                <option value="250">250</option>
+                <option value="300">300</option>
+            </select>
+            <label for="roll-count">Rolls</label>
+            <input type="checkbox" id="legfest" name="legfest">
+            <label for="legfest">6%?</label>
+            <input type="checkbox" id="rateup" name="legfest">
+            <label for="rateup">Rate up?</label>
+            <input type="text" id="rateup-value" placeholder="%" value="0.6">
+            <label for="rateup-value">% Rate up Sum</label>
+            <button id="sim-start" type="button" onclick="generate()">Go</button>
+            <button id="sim-reset" type="button" onclick="reset_cost()">Reset</button>
+        </div>
+        <div id="sim-result">
+        </div>
+        <div id="sim-cost">
+        </div>
+    </h2>
+</body>
+</html>

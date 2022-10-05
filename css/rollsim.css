@@ -1,0 +1,40 @@
+#roll-count, #rateup-value, #sim-start, #sim-reset {
+    background-color: #ffffffb0;
+    border: 2px solid #000000;
+    margin: 5px;
+    width: 80px;
+    font-size: 25px;
+    display: inline-block;
+}
+
+#sim-start, #sim-reset {
+    border-radius: 10px;
+}
+
+#roll-count:hover, #rateup-value:hover, #sim-start:hover {
+    background-color: #ffffff;
+}
+
+#legfest, #rateup {
+  height: 25px;
+  width: 25px;
+}
+
+label {
+    color:white;
+    font-size: 25px;
+}
+
+#sim-result, #sim-cost {
+    background: #20202080;
+    font-size: 20px;
+    padding: 1em;
+    color: white;
+}
+
+#img-rateup {
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 0 0 10px #9ecaed;
+}
