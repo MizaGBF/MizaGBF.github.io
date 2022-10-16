@@ -334,12 +334,19 @@ function retrieveSecond(elemID)
 function reduceNumber(num)
 {
     let count = 0;
+    let sign = 1;
+    if(num < 0)
+    {
+        num *= -1;
+        sign = -1;
+    }
     while(num >= 1000)
     {
         num /= 1000;
         count += 1;
         if(count >= 3) break;
     }
+    num *= sign;
     num = num.toFixed(1);
     switch(count)
     {
