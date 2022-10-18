@@ -1,0 +1,463 @@
+<!--This page is automatically generated, please excuse the poor formatting--><head><title>Siete Online Help v10.0</title><meta name="title" content="Siete Online Help v10.0"><meta name="description" content="Online Help and Command List for the Granblue Fantasy Discord bot Siete."><meta property="og:type" content="website"><meta property="og:url" content="https://mizagbf.github.io/"><meta property="og:title" content="Siete Online Help v10.0"><meta property="og:description" content="Online Help and Command List for the Granblue Fantasy Discord bot Siete."><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://mizagbf.github.io/"><meta property="twitter:title" content="Siete Online Help v10.0"><meta property="twitter:description" content="Online Help and Command List for the Granblue Fantasy Discord bot Siete."><link rel="icon" type="image/png" href="assets/boticon.png" /></head>
+<body><h1 style="width:630px;margin-left: auto; margin-right: auto;"><img src="assets/boticon.png" style="vertical-align:middle;border-radius: 50%;box-shadow: 0 0 0 2pt #981cd6;width: 120px; height: 120px">&nbsp;Siete Online Help<br>&nbsp;<small>v10.0</small></h1>
+<div class="tab"><button class="tablinks" onclick="openTab(event, 'Commands')">Commands</button><button class="tablinks" onclick="openTab(event, 'Guide')">Guide</button><button class="tablinks" onclick="openTab(event, 'FAQ')">FAQ</button></div><div id="Commands" class="tabcontent"><div id="buttons"><button class="btn active" onclick="filterSelection('all')" style="background: #050505;">All</button>
+<button class="btn" onclick="filterSelection('dreadbarrage')" style="background: #0062ff;">DreadBarrage</button>
+<button class="btn" onclick="filterSelection('games')" style="background: #eb6b34;">Games</button>
+<button class="btn" onclick="filterSelection('general')" style="background: #d12e57;">General</button>
+<button class="btn" onclick="filterSelection('granbluefantasy')" style="background: #34aeeb;">GranblueFantasy</button>
+<button class="btn" onclick="filterSelection('guildwar')" style="background: #ff0000;">GuildWar</button>
+<button class="btn" onclick="filterSelection('moderation')" style="background: #2eced1;">Moderation</button>
+<button class="btn" onclick="filterSelection('reminder')" style="background: #5e17e3;">Reminder</button>
+<button class="btn" onclick="filterSelection('roles')" style="background: #17e37a;">Roles</button>
+<button class="btn" onclick="filterSelection('sparking')" style="background: #eba834;">Sparking</button>
+</div><br><input type="text" id="textSelection" onkeyup="searchSelection()" placeholder="Search a command"><br>
+<ul id="commandList">
+<li class="command dreadbarrage"><div class="command-name"><span style="display: inline-block;background: #0062ff;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">DreadBarrage</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/db</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command dreadbarrage"><div class="command-name"><span style="display: inline-block;background: #0062ff;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">DreadBarrage</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/db time</div><div class="command-description"><b>Description :</b>&nbsp;Post the Dread Barrage schedule</div></li>
+<li class="command dreadbarrage"><div class="command-name"><span style="display: inline-block;background: #0062ff;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">DreadBarrage</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/db token</div><div class="command-description"><b>Description :</b>&nbsp;Convert Dread Barrage token values</div><div class="command-use"><b>Parameters :</b><br>value (String)&nbsp;:&nbsp;Value to convert (support B, M and K)</div></li>
+<li class="command dreadbarrage"><div class="command-name"><span style="display: inline-block;background: #0062ff;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">DreadBarrage</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/db box</div><div class="command-description"><b>Description :</b>&nbsp;Convert Dread Barrage box values</div><div class="command-use"><b>Parameters :</b><br>box (Integer)&nbsp;:&nbsp;Number of box to clear<br><b>(Optional)</b>&nbsp;box_done (Integer)&nbsp;:&nbsp;Your current box progress, default 0 (Will be ignored if equal or higher than target)<br><b>(Optional)</b>&nbsp;with_token (String)&nbsp;:&nbsp;Your current token amount (support B, M and K)</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/roll</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/roll single</div><div class="command-description"><b>Description :</b>&nbsp;Simulate a single draw</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;legfest (Integer)&nbsp;:&nbsp;0 to force 3%, 1 to force 6%, leave blank for default<br><b>(Optional)</b>&nbsp;classic (Integer)&nbsp;:&nbsp;1 to use the classic gacha</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/roll ten</div><div class="command-description"><b>Description :</b>&nbsp;Simulate ten draws</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;legfest (Integer)&nbsp;:&nbsp;0 to force 3%, 1 to force 6%, leave blank for default<br><b>(Optional)</b>&nbsp;classic (Integer)&nbsp;:&nbsp;1 to use the classic gacha</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/roll scam</div><div class="command-description"><b>Description :</b>&nbsp;Simulate ten draws and the Scam Gacha</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;legfest (Integer)&nbsp;:&nbsp;0 to force 3%, 1 to force 6%, leave blank for default<br><b>(Optional)</b>&nbsp;scam_index (Integer)&nbsp;:&nbsp;Which Scam gacha to use (Default: 1 for the first one)</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/roll spark</div><div class="command-description"><b>Description :</b>&nbsp;Simulate a spark</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;legfest (Integer)&nbsp;:&nbsp;0 to force 3%, 1 to force 6%, leave blank for default<br><b>(Optional)</b>&nbsp;classic (Integer)&nbsp;:&nbsp;1 to use the classic gacha</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/roll count</div><div class="command-description"><b>Description :</b>&nbsp;Simulate a specific amount of draw</div><div class="command-use"><b>Parameters :</b><br>num (Integer)&nbsp;:&nbsp;Number of rolls (2 ~ 600)<br><b>(Optional)</b>&nbsp;legfest (Integer)&nbsp;:&nbsp;0 to force 3%, 1 to force 6%, leave blank for default<br><b>(Optional)</b>&nbsp;classic (Integer)&nbsp;:&nbsp;1 to use the classic gacha</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/roll gachapin</div><div class="command-description"><b>Description :</b>&nbsp;Simulate a Gachapin Frenzy</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;legfest (Integer)&nbsp;:&nbsp;0 to force 3%, 1 to force 6%, leave blank for default<br><b>(Optional)</b>&nbsp;classic (Integer)&nbsp;:&nbsp;1 to use the classic gacha</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/roll mukku</div><div class="command-description"><b>Description :</b>&nbsp;Simulate a Mukku Frenzy</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;classic (Integer)&nbsp;:&nbsp;1 to use the classic gacha</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/roll supermukku</div><div class="command-description"><b>Description :</b>&nbsp;Simulate a Super Mukku Frenzy</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;classic (Integer)&nbsp;:&nbsp;1 to use the classic gacha</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/roll memeroll</div><div class="command-description"><b>Description :</b>&nbsp;Simulate rolls until a SSR</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;legfest (Integer)&nbsp;:&nbsp;0 to force 3%, 1 to force 6%, leave blank for default<br><b>(Optional)</b>&nbsp;rateup (String)&nbsp;:&nbsp;Input anything to roll until a rate up SSR<br><b>(Optional)</b>&nbsp;classic (Integer)&nbsp;:&nbsp;1 to use the classic gacha</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/roll roulette</div><div class="command-description"><b>Description :</b>&nbsp;Imitate the GBF roulette</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;legfest (Integer)&nbsp;:&nbsp;0 to force 3%, 1 to force 6%, leave blank for default<br><b>(Optional)</b>&nbsp;classic (Integer)&nbsp;:&nbsp;1 to use the classic gacha</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/game</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/game scratch</div><div class="command-description"><b>Description :</b>&nbsp;Imitate the GBF scratch game from Anniversary 2020</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/game chestrush</div><div class="command-description"><b>Description :</b>&nbsp;Imitate the GBF treasure game from Summer 2020</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/game fortune</div><div class="command-description"><b>Description :</b>&nbsp;Imitate the GBF summer fortune game from Summer 2021</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;usercards (String)&nbsp;:&nbsp;List your cards here</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/game deal</div><div class="command-description"><b>Description :</b>&nbsp;Deal a random poker hand</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/game poker</div><div class="command-description"><b>Description :</b>&nbsp;Play a poker mini-game with other people (2 to 6 players)</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;max_round (Integer)&nbsp;:&nbsp;Number of rounds to play</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/game blackjack</div><div class="command-description"><b>Description :</b>&nbsp;Play a blackjack mini-game with other people (1 to 6 players)</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/game tictactoe</div><div class="command-description"><b>Description :</b>&nbsp;Play a game of Tic Tac Toe (2 players Only)</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/game connectfour</div><div class="command-description"><b>Description :</b>&nbsp;Play a game of Connect Four (2 players Only)</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/game battleship</div><div class="command-description"><b>Description :</b>&nbsp;Play a game of Battle Ship (2 players Only)</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/game rockpaperscissor</div><div class="command-description"><b>Description :</b>&nbsp;Play a Rock Paper Scissor mini-game with other people (2 players Only)</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;bestof (Integer)&nbsp;:&nbsp;How many rounds to win</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/random</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/random dice</div><div class="command-description"><b>Description :</b>&nbsp;Roll some dies</div><div class="command-use"><b>Parameters :</b><br>dice_string (String)&nbsp;:&nbsp;Format is NdN. Minimum is 1d6, Maximum is 10d100</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/random coin</div><div class="command-description"><b>Description :</b>&nbsp;Flip a coin</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/random quota</div><div class="command-description"><b>Description :</b>&nbsp;Give you your GW quota for the day</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/random character</div><div class="command-description"><b>Description :</b>&nbsp;Generate a random GBF character</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/random xil</div><div class="command-description"><b>Description :</b>&nbsp;Generate a random element for Xil (Private Joke)</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/ask</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/ask choice</div><div class="command-description"><b>Description :</b>&nbsp;Ask me to pick a choice</div><div class="command-use"><b>Parameters :</b><br>choices (String)&nbsp;:&nbsp;Format is Choice 1;Choice 2;...;Choice N</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/ask question</div><div class="command-description"><b>Description :</b>&nbsp;Ask me a question</div><div class="command-use"><b>Parameters :</b><br>question (String)</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/ask when</div><div class="command-description"><b>Description :</b>&nbsp;Ask me when will something happen</div><div class="command-use"><b>Parameters :</b><br>question (String)</div></li>
+<li class="command games"><div class="command-name"><span style="display: inline-block;background: #eb6b34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Games</span>&nbsp;<span style="display: inline-block;background: #e892c8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Message Command</span>&nbsp;&nbsp;UwU</div><div class="command-description"><b>Description :</b>&nbsp;UwU-tize a message</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/invite</div><div class="command-description"><b>Description :</b>&nbsp;Get the MizaBOT invite link</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/bug_report</div><div class="command-description"><b>Description :</b>&nbsp;Send a bug report or feedback to the developer</div><div class="command-use"><b>Parameters :</b><br>report (String)</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/help</div><div class="command-description"><b>Description :</b>&nbsp;Get the bot help</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;search (String)&nbsp;:&nbsp;What are you searching for?</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/mizabot</div><div class="command-description"><b>Description :</b>&nbsp;Post the bot status</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/changelog</div><div class="command-description"><b>Description :</b>&nbsp;Post the bot changelog</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/poll</div><div class="command-description"><b>Description :</b>&nbsp;Make a poll</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/utility</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/utility calc</div><div class="command-description"><b>Description :</b>&nbsp;Process a mathematical expression. Support variables (Example: cos(a + b) / c, a = 1, b=2,c = 3).</div><div class="command-use"><b>Parameters :</b><br>expression (String)&nbsp;:&nbsp;Mathematical Expression</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/utility jst</div><div class="command-description"><b>Description :</b>&nbsp;Post the current time, JST timezone</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/utility rollchance</div><div class="command-description"><b>Description :</b>&nbsp;Calculate your chance of rolling the rate up for a given amount of rolls.</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;count (String)&nbsp;:&nbsp;Amount of rolls. Leave empty to use your set spark count</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/utility dropchance</div><div class="command-description"><b>Description :</b>&nbsp;Calculate your chance of dropping an item.</div><div class="command-use"><b>Parameters :</b><br>chance (String)&nbsp;:&nbsp;Drop rate of the item (Format: Either XX% or 0.X)<br><b>(Optional)</b>&nbsp;tries (Integer)&nbsp;:&nbsp;Amount of tries, default is 1</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/utility fortunechance</div><div class="command-description"><b>Description :</b>&nbsp;Calculate your chance at the GBF summer fortune game from Summer 2021</div><div class="command-use"><b>Parameters :</b><br>cards (String)&nbsp;:&nbsp;Your list of cards, separated by spaces</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/utility yen</div><div class="command-description"><b>Description :</b>&nbsp;Retrieve the current yen conversion rate</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/4chan</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/4chan search</div><div class="command-description"><b>Description :</b>&nbsp;Search 4chan threads</div><div class="command-use"><b>Parameters :</b><br>board (String)&nbsp;:&nbsp;The board to search on.<br>search (String)&nbsp;:&nbsp;Search string</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/4chan gbfg</div><div class="command-description"><b>Description :</b>&nbsp;Post the latest /gbfg/ threads</div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/4chan hgg</div><div class="command-description"><b>Description :</b>&nbsp;Post the latest /hgg2d/ threads <b>(NSFW channels Only)</b></div></li>
+<li class="command general"><div class="command-name"><span style="display: inline-block;background: #d12e57;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">General</span>&nbsp;<span style="display: inline-block;background: #e892c8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Message Command</span>&nbsp;&nbsp;Pin Message</div><div class="command-description"><b>Description :</b>&nbsp;Add a message to the pinboard</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/gbf</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf wiki</div><div class="command-description"><b>Description :</b>&nbsp;Search the GBF wiki</div><div class="command-use"><b>Parameters :</b><br>terms (String)&nbsp;:&nbsp;Search expression</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf info</div><div class="command-description"><b>Description :</b>&nbsp;Post various Granblue Fantasy informations</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf maintenance</div><div class="command-description"><b>Description :</b>&nbsp;Post GBF maintenance status</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf stream</div><div class="command-description"><b>Description :</b>&nbsp;Post the stream text</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;op (String)</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf schedule</div><div class="command-description"><b>Description :</b>&nbsp;Post the GBF schedule</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;raw (Integer)</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf gacha</div><div class="command-description"><b>Description :</b>&nbsp;Post the current gacha informations</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf profile unset</div><div class="command-description"><b>Description :</b>&nbsp;Unlink your GBF id</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf profile set</div><div class="command-description"><b>Description :</b>&nbsp;Link your GBF id to your Discord ID</div><div class="command-use"><b>Parameters :</b><br>id (Integer)&nbsp;:&nbsp;A valid GBF Profile ID. Usurpation will result in ban.</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf profile see</div><div class="command-description"><b>Description :</b>&nbsp;Retrieve a GBF profile</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;target (String)&nbsp;:&nbsp;Either a valid GBF ID, discord ID or mention</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #92e8a3;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">User Command</span>&nbsp;&nbsp;GBF Profile</div><div class="command-description"><b>Description :</b>&nbsp;Retrieve a GBF profile</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf crew</div><div class="command-description"><b>Description :</b>&nbsp;Get a crew profile (Use /gw crew for contributions)</div><div class="command-use"><b>Parameters :</b><br>id (String)&nbsp;:&nbsp;Crew ID</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf utility leechlist</div><div class="command-description"><b>Description :</b>&nbsp;Post a link to /gbfg/ leechlist collection</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf utility spreadsheet</div><div class="command-description"><b>Description :</b>&nbsp;Post a link to my SpreadSheet Folder</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf utility raidfinder</div><div class="command-description"><b>Description :</b>&nbsp;Post the (You) python raidfinder</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf utility critical</div><div class="command-description"><b>Description :</b>&nbsp;Calculate critical rate</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;weapons (String)&nbsp;:&nbsp;List of weapon modifiers. Put nothing to get the list.</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf utility enmity</div><div class="command-description"><b>Description :</b>&nbsp;Calculate enmity strength at a specific hp value</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;hp (Integer)&nbsp;:&nbsp;HP%<br><b>(Optional)</b>&nbsp;weapons (String)&nbsp;:&nbsp;List of weapon modifiers. Put nothing to get the list.</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf utility stamina</div><div class="command-description"><b>Description :</b>&nbsp;Calculate stamina strength at a specific hp value</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;hp (Integer)&nbsp;:&nbsp;HP%<br><b>(Optional)</b>&nbsp;weapons (String)&nbsp;:&nbsp;List of weapon modifiers. Put nothing to get the list.</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf utility xp</div><div class="command-description"><b>Description :</b>&nbsp;Character experience calculator</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;start_level (Integer)&nbsp;:&nbsp;Starting Point of the calcul<br><b>(Optional)</b>&nbsp;end_level (Integer)&nbsp;:&nbsp;Final Point of the calcul</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf check brand</div><div class="command-description"><b>Description :</b>&nbsp;Check if a GBF profile is restricted</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;target (String)&nbsp;:&nbsp;Either a valid GBF ID, discord ID or mention</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf check doom</div><div class="command-description"><b>Description :</b>&nbsp;Give the time elapsed of various GBF related releases</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf check coop</div><div class="command-description"><b>Description :</b>&nbsp;Retrieve the current coop daily missions</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf check koregra</div><div class="command-description"><b>Description :</b>&nbsp;Post the time to the next monthly dev post</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf check news</div><div class="command-description"><b>Description :</b>&nbsp;Post the latest news posts</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbf check 4koma</div><div class="command-description"><b>Description :</b>&nbsp;Post a Granblues Episode</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;id (Integer)&nbsp;:&nbsp;A 4koma number</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/guide</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/guide ubaha</div><div class="command-description"><b>Description :</b>&nbsp;Post the Ultimate Bahamut HL Triggers</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/guide lucilius</div><div class="command-description"><b>Description :</b>&nbsp;Post the Lucilius HL Triggers</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/guide beelzebub</div><div class="command-description"><b>Description :</b>&nbsp;Post the Beelzebub HL Triggers</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/guide belial</div><div class="command-description"><b>Description :</b>&nbsp;Post the Belial HL Triggers</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/guide subaha</div><div class="command-description"><b>Description :</b>&nbsp;Post the Super Ultimate Bahamut HL Triggers</div></li>
+<li class="command granbluefantasy"><div class="command-name"><span style="display: inline-block;background: #34aeeb;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GranblueFantasy</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/guide defense</div><div class="command-description"><b>Description :</b>&nbsp;Post some known defense values</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/gw</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw time</div><div class="command-description"><b>Description :</b>&nbsp;Post the GW schedule</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw buff</div><div class="command-description"><b>Description :</b>&nbsp;Check when is the next GW buff ((You) Server Only)</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw ranking</div><div class="command-description"><b>Description :</b>&nbsp;Retrieve the current GW ranking</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw estimation</div><div class="command-description"><b>Description :</b>&nbsp;Estimate the GW ranking at the end of current day</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw crew</div><div class="command-description"><b>Description :</b>&nbsp;Get a crew profile</div><div class="command-use"><b>Parameters :</b><br>id (String)&nbsp;:&nbsp;Crew ID<br><b>(Optional)</b>&nbsp;mode (Integer)&nbsp;:&nbsp;Mode (0=Auto, 1=Rank, 2=Honor)</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw supercrew</div><div class="command-description"><b>Description :</b>&nbsp;Sort and post the top 30 server members per contribution</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw lead</div><div class="command-description"><b>Description :</b>&nbsp;Search two crew current scores and compare them</div><div class="command-use"><b>Parameters :</b><br>id_crew_1 (String)&nbsp;:&nbsp;A crew ID<br>id_crew_2 (String)&nbsp;:&nbsp;A crew ID</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw youlead</div><div class="command-description"><b>Description :</b>&nbsp;Show the current match of (You) ((You) Server Only)</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;opponent (String)&nbsp;:&nbsp;Opponent ID to set it</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw utility box</div><div class="command-description"><b>Description :</b>&nbsp;Convert Guild War box values</div><div class="command-use"><b>Parameters :</b><br>box (Integer)&nbsp;:&nbsp;Number of box to clear<br><b>(Optional)</b>&nbsp;box_done (Integer)&nbsp;:&nbsp;Your current box progress, default 0 (Will be ignored if equal or higher than target)<br><b>(Optional)</b>&nbsp;with_token (String)&nbsp;:&nbsp;Your current token amount (support B, M and K)</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw utility token</div><div class="command-description"><b>Description :</b>&nbsp;Convert Guild War token values</div><div class="command-use"><b>Parameters :</b><br>token_target (String)&nbsp;:&nbsp;Number of tokens you want (support B, M and K)<br><b>(Optional)</b>&nbsp;final_rally (Integer)&nbsp;:&nbsp;1 to include final rally (default), 0 to disable</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw utility meat</div><div class="command-description"><b>Description :</b>&nbsp;Convert Guild War meat values</div><div class="command-use"><b>Parameters :</b><br>value (String)&nbsp;:&nbsp;Value to convert (support B, M and K)</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw utility honor</div><div class="command-description"><b>Description :</b>&nbsp;Convert Guild War honor values</div><div class="command-use"><b>Parameters :</b><br>value (String)&nbsp;:&nbsp;Value to convert (support B, M and K)</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw utility honorplanning</div><div class="command-description"><b>Description :</b>&nbsp;Calculate how many NM95 and 150 you need for your targeted honor</div><div class="command-use"><b>Parameters :</b><br>target (String)&nbsp;:&nbsp;Number of honors (support B, M and K)</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw utility speed</div><div class="command-description"><b>Description :</b>&nbsp;Compare multiple GW fights based on your speed</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;params (String)&nbsp;:&nbsp;Leave empty to see the guide</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw utility nm95</div><div class="command-description"><b>Description :</b>&nbsp;Give the dragon solo equivalent of NM95</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;hp_percent (Integer)&nbsp;:&nbsp;HP% of NM95 you want to do</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw find crew</div><div class="command-description"><b>Description :</b>&nbsp;Search a crew or player GW score in the bot data</div><div class="command-use"><b>Parameters :</b><br>terms (String)&nbsp;:&nbsp;What to search for<br><b>(Optional)</b>&nbsp;search_type (Integer)&nbsp;:&nbsp;0 = name (default). 1 = exact name. 2 = ID. 3 = ranking.<br><b>(Optional)</b>&nbsp;mode_past (Integer)&nbsp;:&nbsp;1 to search the previous GW. 0  for the current/last (default).<br><b>(Optional)</b>&nbsp;mode_all (Integer)&nbsp;:&nbsp;1 to receive all results via DM. 0 to disable (default).</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gw find player</div><div class="command-description"><b>Description :</b>&nbsp;Search a crew or player GW score in the bot data</div><div class="command-use"><b>Parameters :</b><br>terms (String)&nbsp;:&nbsp;What to search for<br><b>(Optional)</b>&nbsp;search_type (Integer)&nbsp;:&nbsp;0 = name (default). 1 = exact name. 2 = ID. 3 = ranking.<br><b>(Optional)</b>&nbsp;mode_past (Integer)&nbsp;:&nbsp;1 to search the previous GW. 0  for the current/last (default).<br><b>(Optional)</b>&nbsp;mode_all (Integer)&nbsp;:&nbsp;1 to receive all results via DM. 0 to disable (default).</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/gbfg</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbfg playerranking</div><div class="command-description"><b>Description :</b>&nbsp;Post the /gbfg/ Top 30 per contribution</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbfg danchoranking</div><div class="command-description"><b>Description :</b>&nbsp;Sort and post all /gbfg/ captains per contribution</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbfg ranking</div><div class="command-description"><b>Description :</b>&nbsp;Sort and post all /gbfg/ crew per contribution</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;speed (Integer)&nbsp;:&nbsp;1 to sort by speed, 0 to sort by honor (default)</div></li>
+<li class="command guildwar"><div class="command-name"><span style="display: inline-block;background: #ff0000;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">GuildWar</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/gbfg recruit</div><div class="command-description"><b>Description :</b>&nbsp;Post all recruiting /gbfg/ crews</div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #92e8a3;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">User Command</span>&nbsp;&nbsp;Profile Picture</div><div class="command-description"><b>Description :</b>&nbsp;Retrieve the profile picture of an user</div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #92e8a3;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">User Command</span>&nbsp;&nbsp;Server Join Date</div><div class="command-description"><b>Description :</b>&nbsp;Retrieve the date at which a member joined this server</div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #e892c8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Message Command</span>&nbsp;&nbsp;Channel Info</div><div class="command-description"><b>Description :</b>&nbsp;Give informations on the current channel</div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #e892c8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Message Command</span>&nbsp;&nbsp;Server Info</div><div class="command-description"><b>Description :</b>&nbsp;Get informations on the current guild</div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/mod</div><div class="command-description"><b>Description :</b>&nbsp;Command Group <b>(Mod Only)</b></div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/mod strike del</div><div class="command-description"><b>Description :</b>&nbsp;Delete the ST setting of this server <b>(Mod Only)</b></div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/mod strike set</div><div class="command-description"><b>Description :</b>&nbsp;Set the two ST of this server, JST Time <b>(Mod Only)</b></div><div class="command-use"><b>Parameters :</b><br>st1 (Integer)&nbsp;:&nbsp;First Strike Time (JST)<br>st2 (Integer)&nbsp;:&nbsp;Second Strike Time (JST)</div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/mod ban spark</div><div class="command-description"><b>Description :</b>&nbsp;Ban an user from the spark ranking <b>(Mod Only)</b></div><div class="command-use"><b>Parameters :</b><br>member (Member)</div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/mod cleanup toggle</div><div class="command-description"><b>Description :</b>&nbsp;Toggle the auto-cleanup in this channel <b>(Mod Only)</b></div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/mod cleanup reset</div><div class="command-description"><b>Description :</b>&nbsp;Reset the auto-cleanup settings <b>(Mod Only)</b></div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/mod cleanup see</div><div class="command-description"><b>Description :</b>&nbsp;See all channels where no clean up is performed <b>(Mod Only)</b></div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/mod announcement togglechannel</div><div class="command-description"><b>Description :</b>&nbsp;Enable/Disable game announcements in the specified channel <b>(Mod Only)</b></div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/mod pinboard enable</div><div class="command-description"><b>Description :</b>&nbsp;Enable the pinboard on your server <b>(Mod Only)</b></div><div class="command-use"><b>Parameters :</b><br>tracked_channels (String)&nbsp;:&nbsp;List of Channel IDs to track (separated by ;)<br>emoji (String)&nbsp;:&nbsp;The emoji used as a pin trigger<br>threshold (Integer)&nbsp;:&nbsp;Number of reactions needed to trigger the pin<br>mod_bypass (Integer)&nbsp;:&nbsp;If 1, a moderator can force the pin with a single reaction<br>pinning_channel (String)&nbsp;:&nbsp;ID of the channel where pin will be displayed</div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/mod pinboard disable</div><div class="command-description"><b>Description :</b>&nbsp;Disable the pinboard on your server <b>(Mod Only)</b></div></li>
+<li class="command moderation"><div class="command-name"><span style="display: inline-block;background: #2eced1;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Moderation</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/mod pinboard see</div><div class="command-description"><b>Description :</b>&nbsp;See the pinboard settings on your server</div></li>
+<li class="command reminder"><div class="command-name"><span style="display: inline-block;background: #5e17e3;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Reminder</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/remind</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command reminder"><div class="command-name"><span style="display: inline-block;background: #5e17e3;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Reminder</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/remind add</div><div class="command-description"><b>Description :</b>&nbsp;Remind you of something at the specified time (±30 seconds precision)</div><div class="command-use"><b>Parameters :</b><br>duration (String)&nbsp;:&nbsp;Format: XdXhXmXs<br>msg (String)&nbsp;:&nbsp;Content of the reminder</div></li>
+<li class="command reminder"><div class="command-name"><span style="display: inline-block;background: #5e17e3;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Reminder</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/remind list</div><div class="command-description"><b>Description :</b>&nbsp;Post your current list of reminders</div></li>
+<li class="command reminder"><div class="command-name"><span style="display: inline-block;background: #5e17e3;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Reminder</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/remind remove</div><div class="command-description"><b>Description :</b>&nbsp;Delete one of your reminders</div><div class="command-use"><b>Parameters :</b><br>rid (Integer)&nbsp;:&nbsp;Number of the reminder to delete</div></li>
+<li class="command roles"><div class="command-name"><span style="display: inline-block;background: #17e37a;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Roles</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/role</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command roles"><div class="command-name"><span style="display: inline-block;background: #17e37a;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Roles</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/role iam</div><div class="command-description"><b>Description :</b>&nbsp;Add a role to you that you choose. Role must be on a list of self-assignable roles.</div><div class="command-use"><b>Parameters :</b><br>role_name (String)&nbsp;:&nbsp;The self-assignable role you want to get</div></li>
+<li class="command roles"><div class="command-name"><span style="display: inline-block;background: #17e37a;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Roles</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/role iamnot</div><div class="command-description"><b>Description :</b>&nbsp;Remove a role to you that you choose. Role must be on a list of self-assignable roles.</div><div class="command-use"><b>Parameters :</b><br>role_name (String)&nbsp;:&nbsp;The self-assignable role you want to remove</div></li>
+<li class="command roles"><div class="command-name"><span style="display: inline-block;background: #17e37a;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Roles</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/role list</div><div class="command-description"><b>Description :</b>&nbsp;List the self-assignable roles available in this server</div></li>
+<li class="command roles"><div class="command-name"><span style="display: inline-block;background: #17e37a;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Roles</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/role add</div><div class="command-description"><b>Description :</b>&nbsp;Add a role to the list of self-assignable roles <b>(Mod Only)</b></div><div class="command-use"><b>Parameters :</b><br>role_name (String)&nbsp;:&nbsp;The self-assignable role you want to add to the list</div></li>
+<li class="command roles"><div class="command-name"><span style="display: inline-block;background: #17e37a;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Roles</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/role remove</div><div class="command-description"><b>Description :</b>&nbsp;Remove a role from the list of self-assignable roles <b>(Mod Only)</b></div><div class="command-use"><b>Parameters :</b><br>role_name (String)&nbsp;:&nbsp;The self-assignable role you want to remove from the list</div></li>
+<li class="command sparking"><div class="command-name"><span style="display: inline-block;background: #eba834;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Sparking</span>&nbsp;<span style="display: inline-block;background: #92b3e8;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/spark</div><div class="command-description"><b>Description :</b>&nbsp;Command Group</div></li>
+<li class="command sparking"><div class="command-name"><span style="display: inline-block;background: #eba834;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Sparking</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/spark set</div><div class="command-description"><b>Description :</b>&nbsp;Set your roll count</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;crystal (Integer)&nbsp;:&nbsp;Your amount of Crystals<br><b>(Optional)</b>&nbsp;single (Integer)&nbsp;:&nbsp;Your amount of Single Draw Tickets<br><b>(Optional)</b>&nbsp;ten (Integer)&nbsp;:&nbsp;Your amount of Ten Draw Tickets<br><b>(Optional)</b>&nbsp;shrimp (Integer)&nbsp;:&nbsp;Your amount of Premium Friday Shrimps</div></li>
+<li class="command sparking"><div class="command-name"><span style="display: inline-block;background: #eba834;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Sparking</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/spark see</div><div class="command-description"><b>Description :</b>&nbsp;Post your (or the target) roll count</div><div class="command-use"><b>Parameters :</b><br>member (Member)</div></li>
+<li class="command sparking"><div class="command-name"><span style="display: inline-block;background: #eba834;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Sparking</span>&nbsp;<span style="display: inline-block;background: #92e8a3;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">User Command</span>&nbsp;&nbsp;GBF Spark</div><div class="command-description"><b>Description :</b>&nbsp;Post the user roll count</div></li>
+<li class="command sparking"><div class="command-name"><span style="display: inline-block;background: #eba834;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Sparking</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/spark zero</div><div class="command-description"><b>Description :</b>&nbsp;Post a spark estimation based on today date</div><div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;day_difference (Integer)&nbsp;:&nbsp;Add a number of days to today date</div></li>
+<li class="command sparking"><div class="command-name"><span style="display: inline-block;background: #eba834;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5);">Sparking</span>&nbsp;<span style="display: inline-block;background: #ffcf8c;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Sub Command</span>&nbsp;&nbsp;/spark ranking</div><div class="command-description"><b>Description :</b>&nbsp;Show the ranking of everyone saving for a spark in the server</div></li>
+</ul>
+</div>
+
+<div id="Guide" class="tabcontent">
+<h1>Guide</h1>
+<h2>What is this?</h2>
+<p>Siete is a <a href="https://game.granbluefantasy.jp">Granblue Fantasty</a> themed <a href="https://discord.com/">Discord</a> Bot.<br>
+It's a fork of MizaBOT available on <a href="https://github.com/MizaGBF/MizaBOT">GitHub</a>.<br>
+It provides various commands, ranging from utilty to recreative ones, related (or not) to the game.<br>
+<b>This page is meant to be a private help page for people with access to this Discord Bot.</b><br></p>
+<h2>What to do after inviting the bot?</h2>
+<p>1) Don't panic if you can't use the bot yet! The commands can take up to one hour to show up.(It's an innate Discord limitation, sadly).<br>
+<br>
+2A) Make a bot channel if you want. The bot is designed to not post in channels where it doesn't have the "send messages" permission, meaning you can confine it in one channel if you desire to.<br>
+<br>
+2B) If you still want to use it in other channels, there is an auto clean up system (meaning the command messages will be deleted after a while, to avoid spam). Check out the command /mod cleanup toggle (and its helpers /mod cleanup reset, /mod cleanup see)<br>
+<br>
+3) Make sure the bot has the <b>external emoji</b> permission or it won't be able to use its custom emojis. More details in the FAQ.<br>
+<br>
+And you are mostly done after this.</p>
+
+<h2>What other features can I enable on my server?</h2>
+<p>1) If you are a server for a Granblue Fantasy Crew, you can set your Crew Strike Time with /mod strike set.<br>
+Simply give it the hours (JST Timezone).<br>
+The command /mod strike del allows you to delete them.<br>
+Your Strike Times will appear when using the /gbf info command.</p>
+
+<p>2) You can setup a pinboard with the /mod pinboard enable command. It's not very complicated but here are detailed steps:<br>
+First, activate developer mode in your Discord Settings, it will come handy.<br>
+Second, go to every channels you want to be able to trigger the pinboard, and copy their ID (with a right click > Copy ID)<br>
+Third, put those IDs together in one string, separated by a semi colon (example: 4687977847;84786464;64768468)<br>
+Fourth, make a new channel dedicated to it, called pinboard or whatever. Right click on that channel and copy its ID too (Don't put it with the others).<br>
+Finally, <b>make sure the bot can access those channels</b>. It only needs the read permission for the tracked channels but it <b>needs</b> the send message permission to post in the output one.<br>
+<br>
+Now you can do /mod pinboard enable:<br>
+tracked_channels will be the string I made you do.<br>
+emoji is the emote people must react with to trigger the pin.<br>
+threshold is the number of reactions to be reached to trigger the pin.<br>
+mod_bypass allows a mod to force the pin just by reacting with that emote. Set it to 1 to enable. It's useful for small or slow servers.<br>
+pinning_channel is the ID of the pinboard channel you created.<br>
+<br>
+You can redo the /mod pinboard enable command to change those settings or use /mod pinboard disable to disable it.<br>
+Finally, /mod pinboard see lets you see your current server pinboard settings.<br>
+<br>
+Pinning a message is then easy: People must react to the message with the corresponding emoji.<br>
+<b>Once it meets the required amount of reactions you set</b>, someone must go under the Apps menu of the message and click on Pin message.<br>
+<img src="img/guide_pinboard.png"></p>
+
+<p>3) You can setup a channel to receive notifications about game updates or important news for the bot.<br>
+First, setup a channel for the bot to post in (makes sure its permissions are alright) or select a general channel where you think it would be ok for the bot to post.<br>
+Next, simply do, in this channel, /mod announcement toggle channel .<br>
+That's all. Use the command again to disable, or in another channel to change it.<br>
+You can only set one channel per server.</p>
+
+</div>
+<div id="FAQ" class="tabcontent">
+<h1>Frequently Asked Questions / Troubleshooting</h1>
+<h2>Does the bot collect my messages/data?</h2>
+<p>No. It never did and, since version v9.0, the bot is in fact unable to even see the user messages.</p>
+
+<h2>Can you explain the various command types?</h2>
+<p>Slash Commands are used by simply typing / in chat.<br>
+User Commands are used by right clicking on an user and going into the Apps context menu.<br>
+Message Commands are used by right clicking a message and going into the Apps context menu.</p>
+
+<h2>How do I report a bug?</h2>
+<p>Errors are usually automatically reported but, if you found an odd behavior or what seems like an error, you can use the /bug_report command.</p>
+
+<h2>Emotes used by the bot don't work</h2>
+<p>Make sure the bot has the <b>Use External Emojis</b> permission enabled.<br>
+If you thinkered with the invite link or the bot role permissions (which I don't recommend to), you can use the invitation link again to restore them to default (without needing to kick the bot).<br>
+If the problem persists, make sure you didn't give a role, with this permission disabled, to the bot.<br>
+This paragraph is true for other permissions that the bot might need.</p>
+
+<h2>How do I remove my GBF Profile ID?</h2>
+<p>Your linked GBF ID can be removed with the /gbf profile unset command.
+It's also deleted if you leave all servers where the bot is present.</p>
+
+<h2>How do I remove my set Rolls?</h2>
+<p>Your spark data is deleted after 30 days without an update, just leave it alone.</p>
+
+<h2>One or multiple commands don't work</h2>
+<p>If none of the commands appear and the bot was in your server <b>BEFORE</b> the v9.0, make sure your server owner refreshed the permissions (He only need to click the invite link and to authorize again, no need to kick the bot).<br>
+<br>
+If no commands appear when typing /, you might have to wait (it can take up to one hour to register them).<br>
+<br>
+If you get an "Interaction failed" error, either you tried to use a command without the proper permission (example, a mod command without being mod), you or the bot doesn't have the permission to run this command in this channel, OR the bot is down or rebooting.</p>
+
+<h2>My command froze/hanged</h2>
+<p>The bot most likely rebooted during this timeframe, bad luck for you.</p>
+
+<h2>The command didn't register what I set</h2>
+<p>Again, the bot most likely rebooted and it didn't save in properly. Just wait and do it again.</p>
+
+<h2>Slash commands suck, how do I get back the old ones?</h2>
+<p>Impossible. Blame Discord for pushing this change, not me.</p>
+
+<style>
+html, body {
+  background: #14041c;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: #981cd6;
+}
+
+a:visited {
+  color: #ca1cd6;
+}
+
+#textSelection {
+  background-image: url('img/searchboticon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#commandList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.command {
+  float: left;
+  background-color: #101010;
+  color: #ffffff;
+  width: 100%;
+  margin: 2px;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+  display: none; /* Hidden by default */
+}
+
+.command:hover {
+  background-color: #981cd6;
+}
+
+.command-name {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  font-weight: 700;
+}
+.command-use {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.command-description {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  margin: 2px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  outline: solid #ca1cd6;
+}
+
+.btn.active {
+  outline: solid #981cd6;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tablinks {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  background: #4f4f4f;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  margin: 2px;
+  border-radius: 10%;
+  font-size: 25px;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+  background-color: #6f6f6f;
+}
+
+/* Create an active/current tablink class */
+.tablinks.active {
+  background-color: #463254;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+</style><script>
+function searchSelection(update=true) {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('textSelection');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("commandList");
+  li = ul.getElementsByTagName('li');
+
+  for (i = 0; i < li.length; i++) {
+    txtValue = li[i].textContent || li[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      if(update)
+        addClass(li[i], "show");
+    } else {
+      rmClass(li[i], "show");
+    }
+  }
+}
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("command");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    rmClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+  }
+  searchSelection(false);
+}
+
+function addClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+function rmClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btns = document.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("btn active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+filterSelection("all")
+</script></body>
