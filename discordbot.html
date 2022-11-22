@@ -1,6 +1,6 @@
 <!--This page is automatically generated, please excuse the poor formatting--><head><title>Rosetta Online Help v10.5.5</title><meta name="title" content="Rosetta Online Help v10.5.5"><meta name="description" content="Online Help and Command List for the Granblue Fantasy Discord bot Rosetta."><meta property="og:type" content="website"><meta property="og:url" content="https://mizagbf.github.io/"><meta property="og:title" content="Rosetta Online Help v10.5.5"><meta property="og:description" content="Online Help and Command List for the Granblue Fantasy Discord bot Rosetta."><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://mizagbf.github.io/"><meta property="twitter:title" content="Rosetta Online Help v10.5.5"><meta property="twitter:description" content="Online Help and Command List for the Granblue Fantasy Discord bot Rosetta."><link rel="icon" type="image/png" href="assets/boticon.png" /></head>
 <body><h1 style="width:630px;margin-left: auto; margin-right: auto;"><img src="assets/boticon.png" style="vertical-align:middle;border-radius: 50%;box-shadow: 0 0 0 2pt #981cd6;width: 120px; height: 120px">&nbsp;Rosetta Online Help<br>&nbsp;<small>v10.5.5</small></h1>
-<div class="tab"><button class="tablinks" onclick="openTab(event, 'Commands')">Commands</button><button class="tablinks" onclick="openTab(event, 'Guide')">Guide</button><button class="tablinks" onclick="openTab(event, 'FAQ')">FAQ</button></div><div id="Commands" class="tabcontent"><div id="buttons"><button class="btn active" onclick="filterSelection('all')" style="background: #050505;">All</button>
+<div class="tab"><button class="tablinks" onclick="openTab(event, 'Commands')">Commands</button><button class="tablinks" onclick="openTab(event, 'Guides')">Guides</button><button class="tablinks" onclick="openTab(event, 'FAQ')">FAQ</button></div><div id="Commands" class="tabcontent"><div id="buttons"><button class="btn active" onclick="filterSelection('all')" style="background: #050505;">All</button>
 <button class="btn" onclick="filterSelection('dreadbarrage')" style="background: #0062ff;">DreadBarrage</button>
 <button class="btn" onclick="filterSelection('games')" style="background: #eb6b34;">Games</button>
 <button class="btn" onclick="filterSelection('general')" style="background: #d9d927;">General</button>
@@ -154,60 +154,61 @@
 </ul>
 </div>
 
-<div id="Guide" class="tabcontent">
-<h1>Guide</h1>
-<h2>What is this?</h2>
-<p>Rosetta is a <a href="https://game.granbluefantasy.jp">Granblue Fantasty</a> themed <a href="https://discord.com/">Discord</a> Bot.<br>
-It's a fork of MizaBOT available on <a href="https://github.com/MizaGBF/MizaBOT">GitHub</a>.<br>
-It provides various commands, ranging from utilty to recreative ones, related (or not) to the game.<br>
-<b>This page is meant to be a private help page for people with access to this Discord Bot.</b><br></p>
-<h2>What to do after inviting the bot?</h2>
-<p>1) Don't panic if you can't use the bot yet! The commands can take up to one hour to show up.(It's an innate Discord limitation, sadly).<br>
+<div id="Guides" class="tabcontent">
+<h1>Guides</h1>
+<h2>Good practices</h2>
+<p>1) Make a channel dedicated to the bot and use the command <b>/mod cleanup toggle</b>.<br>
 <br>
-2A) Make a bot channel if you want. The bot is designed to not post in channels where it doesn't have the "send messages" permission, meaning you can confine it in one channel if you desire to.<br>
+2) Remove the <b>"send message"</b> permission to the bot in the channel where you don't want it to be usable.<br>
 <br>
-2B) If you still want to use it in other channels, there is an auto clean up system (meaning the command messages will be deleted after a while, to avoid spam). Check out the command /mod cleanup toggle (and its helpers /mod cleanup reset, /mod cleanup see)<br>
+3) Make sure the bot has the <b>"use external emoji"</b> permission enabled.<br>
 <br>
-3) Make sure the bot has the <b>external emoji</b> permission or it won't be able to use its custom emojis. More details in the FAQ.<br>
-<br>
-And you are mostly done after this.</p>
+Keep in mind anyone with the <b>"edit message"</b> permission is considered a moderator by the bot.</p>
 
-<h2>What other features can I enable on my server?</h2>
-<p>1) If you are a server for a Granblue Fantasy Crew, you can set your Crew Strike Time with /mod strike set.<br>
-Simply give it the hours (JST Timezone).<br>
-The command /mod strike del allows you to delete them.<br>
-Your Strike Times will appear when using the /gbf info command.</p>
+<h2>Strike Time</h2>
+<p>To set or remove your crew Strike Time, use <b>/mod strike set</b> or <b>/mod strike def</b>.<br>
+It will appear when using <b>/gbf info</b> in this server.</p>
 
-<p>2) You can setup a pinboard with the /mod pinboard enable command. It's not very complicated but here are detailed steps:<br>
-First, activate developer mode in your Discord Settings, it will come handy.<br>
-Second, go to every channels you want to be able to trigger the pinboard, and copy their ID (with a right click > Copy ID)<br>
-Third, put those IDs together in one string, separated by a semi colon (example: 4687977847;84786464;64768468)<br>
-Fourth, make a new channel dedicated to it, called pinboard or whatever. Right click on that channel and copy its ID too (Don't put it with the others).<br>
-Finally, <b>make sure the bot can access those channels</b>. It only needs the read permission for the tracked channels but it <b>needs</b> the send message permission to post in the output one.<br>
+<h2>Notifications</h2>
+<p>Select a channel where you want the bot to post notifications and use <b>/mod announcement toggle</b>.<br>
+This bot will receive the following automatically:<br>
+<ul>
+<li>New "Grand Blues!" releases</li>
+<li>News posted on <a href="https://granbluefantasy.jp/news/index.php">https://granbluefantasy.jp/news/index.php</a></li>
+<li>Granblue Fantasy update and analysis notifications.</li>
+<li>In-game news.</li>
+<li>And more.</li>
+</ul>
+</p>
+
+<h2>Pinboard</h2>
+<p>You can setup a pinboard channel with the <b>/mod pinboard enable</b> command.<br>
+1) Enable Developper mode in your Discord settings, under <b>Advanced</b>.<br>
+2) Right-click on all the channels you want to be trackable and copy their ID.<br>
+3) Append them together, separated by a semi colon (example: 4687977847;84786464;64768468). Make sure the bot can see those channels.<br>
+4) Make a channel where the pins will be posted. Make sure the bot has the permission to post in it.<br>
+5) Copy its ID too.<br>
+6) Now, do <b>/mod pinboard enable</b>:<br>
+<i>tracked_channels</i> will be the string with the trackable channel IDs.<br>
+<i>emoji</i> is the emote people must react with to trigger the pin. You can use anything.<br>
+<i>threshold</i> is the number of reactions to be reached to trigger the pin.<br>
+<i>mod_bypass</i> allows a mod to force the pin just by reacting with one emote. Set it to 1 to enable. It's useful for small or slow servers.<br>
+<i>pinning_channel</i> is the ID of the pinboard channel you created.<br>
 <br>
-Now you can do /mod pinboard enable:<br>
-tracked_channels will be the string I made you do.<br>
-emoji is the emote people must react with to trigger the pin.<br>
-threshold is the number of reactions to be reached to trigger the pin.<br>
-mod_bypass allows a mod to force the pin just by reacting with that emote. Set it to 1 to enable. It's useful for small or slow servers.<br>
-pinning_channel is the ID of the pinboard channel you created.<br>
+You can change those settings by reusing this command or see your current settings with <b>/mod pinboard see</b>.<br>
 <br>
-You can redo the /mod pinboard enable command to change those settings or use /mod pinboard disable to disable it.<br>
-Finally, /mod pinboard see lets you see your current server pinboard settings.<br>
-<br>
-Pinning a message is then easy: People must react to the message with the corresponding emoji.<br>
-<b>Once it meets the required amount of reactions you set</b>, someone must go under the Apps menu of the message and click on Pin message.<br>
+To pin a message, people must react with the selected emote and, once the theshold is reached, anyone can right click on this message > Apps > Pin Message. It's not automated because the bot doesn't read user messages by default.<br>
 <img src="assets/guide_pinboard.png"></p>
-
-<p>3) You can setup a channel to receive notifications about game updates or important news for the bot.<br>
-First, setup a channel for the bot to post in (makes sure its permissions are alright) or select a general channel where you think it would be ok for the bot to post.<br>
-Next, simply do, in this channel, /mod announcement toggle channel .<br>
-That's all. Use the command again to disable, or in another channel to change it.<br>
-You can only set one channel per server.</p>
-
 </div>
 <div id="FAQ" class="tabcontent">
 <h1>Frequently Asked Questions / Troubleshooting</h1>
+<h2>What is Rosetta?</h2>
+<p>Rosetta is a <a href="https://game.granbluefantasy.jp">Granblue Fantasty</a> themed <a href="https://discord.com/">Discord</a> Bot.<br>
+It's a closed source fork of MizaBOT (which was available on <a href="https://github.com/MizaGBF/MizaBOT">GitHub</a>).<br>
+It provides various commands, ranging from utilty to recreative ones, related (or not) to the game.<br>
+<b>This page is meant to be a private help page for people with access to this Discord Bot.<br>
+The bot itself isn't open to invitations.</b><br></p>
+
 <h2>Does the bot collect my messages/data?</h2>
 <p>No. It never did and, since version v9.0, the bot is in fact unable to even see the user messages.</p>
 
@@ -233,20 +234,15 @@ It's also deleted if you leave all servers where the bot is present.</p>
 <p>Your spark data is deleted after 30 days without an update, just leave it alone.</p>
 
 <h2>One or multiple commands don't work</h2>
-<p>If none of the commands appear and the bot was in your server <b>BEFORE</b> the v9.0, make sure your server owner refreshed the permissions (He only need to click the invite link and to authorize again, no need to kick the bot).<br>
-<br>
-If no commands appear when typing /, you might have to wait (it can take up to one hour to register them).<br>
+<p>If no commands appear when typing /, you might have to wait (it can take up to one hour to register them).<br>
 <br>
 If you get an "Interaction failed" error, either you tried to use a command without the proper permission (example, a mod command without being mod), you or the bot doesn't have the permission to run this command in this channel, OR the bot is down or rebooting.</p>
 
 <h2>My command froze/hanged</h2>
-<p>The bot most likely rebooted during this timeframe, bad luck for you.</p>
+<p>The bot most likely rebooted or crashed during this timeframe, bad luck for you.</p>
 
 <h2>The command didn't register what I set</h2>
 <p>Again, the bot most likely rebooted and it didn't save in properly. Just wait and do it again.</p>
-
-<h2>Slash commands suck, how do I get back the old ones?</h2>
-<p>Impossible. Blame Discord for pushing this change, not me.</p>
 
 <style>
 html, body {
@@ -265,6 +261,10 @@ h2 {
 }
 
 p {
+  color: white;
+}
+
+ul {
   color: white;
 }
 
