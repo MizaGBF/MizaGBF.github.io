@@ -440,11 +440,20 @@ a:visited {
 }
 
 </style><script>
+var lastFilter = "all";
 function init() {
     try {
         document.getElementById('tab-' + location.hash.substr(1).toLowerCase()).click();
-    }catch (e) {
+    }catch (e) {}
+    let btns = document.getElementsByClassName("btn");
+    for (let i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        let current = document.getElementsByClassName("btn active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
     }
+    filterSelection("all");
 }
 
 function copyCommand(cmd_string) {
@@ -461,7 +470,7 @@ function rmPopup(popup) {
 }
 
 function searchSelection(update=true) {
-  var input, filter, ul, li, a, i, txtValue;
+  let input, filter, ul, li, a, i, txtValue;
   input = document.getElementById('textSelection');
   filter = input.value.toUpperCase();
   ul = document.getElementById("commandList");
@@ -476,20 +485,22 @@ function searchSelection(update=true) {
       rmClass(li[i], "show");
     }
   }
+  if(update) filterSelection(lastFilter);
 }
 function filterSelection(c) {
-  var x, i;
+  let x, i;
   x = document.getElementsByClassName("command");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     rmClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
   }
+  lastFilter=c;
   searchSelection(false);
 }
 
 function addClass(element, name) {
-  var i, arr1, arr2;
+  let i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
@@ -500,7 +511,7 @@ function addClass(element, name) {
 }
 
 function rmClass(element, name) {
-  var i, arr1, arr2;
+  let i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
@@ -511,17 +522,8 @@ function rmClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-var btns = document.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("btn active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
 function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
 
   window.location.hash = '#' + tabName.toLowerCase().replaceAll(' ', '_');
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -537,6 +539,4 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-
-filterSelection("all")
 </script></body>
