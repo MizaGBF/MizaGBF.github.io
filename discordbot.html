@@ -11,7 +11,7 @@
 <button class="btn" onclick="filterSelection('reminder')" style="background: #5e17e3;">Reminder</button>
 <button class="btn" onclick="filterSelection('roles')" style="background: #17e37a;">Roles</button>
 <button class="btn" onclick="filterSelection('sparking')" style="background: #eba834;">Sparking</button>
-</div><br><input type="text" id="textSelection" onkeyup="searchSelection()" placeholder="Search a command"><br>
+</div><br><div class="command-count"><b>146 commands</b></div><br><input type="text" id="textSelection" onkeyup="searchSelection()" placeholder="Search a command"><br>
 <ul id="commandList">
 <li class="command arcarum" onclick="copyCommand('/arcarum route')"><div class="command-name"><span style="display: inline-block;background: #991c50;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.75);">Arcarum</span>&nbsp;<span style="display: inline-block;background: #7e9ccc;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/arcarum route</div><div class="command-description"><b>Description :</b>&nbsp;Show the available Arcarum Routes</div></li>
 <li class="command arcarum" onclick="copyCommand('/arcarum recruit')"><div class="command-name"><span style="display: inline-block;background: #991c50;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.75);">Arcarum</span>&nbsp;<span style="display: inline-block;background: #7e9ccc;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/arcarum recruit</div><div class="command-description"><b>Description :</b>&nbsp;Show the cost of recruiting an Evoker</div></li>
@@ -334,6 +334,10 @@ a:visited {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.command-count {
+  color: white;
 }
 
 .command {
