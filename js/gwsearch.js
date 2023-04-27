@@ -220,6 +220,22 @@ function performSearch(gw, type, target, filter)
         resetOutput();
         let table_header = document.getElementById('table-header').children[0];
         let columns = [];
+        if(content.length == 0)
+        {
+            enable();
+            switch(mode)
+            {
+                case 10: case 11: document.getElementsByClassName("loading")[0].appendChild(document.createTextNode("Crew name not found.")); break;
+                case 12: document.getElementsByClassName("loading")[0].appendChild(document.createTextNode("Crew ID not found.")); break;
+                case 13: document.getElementsByClassName("loading")[0].appendChild(document.createTextNode("Crew ranking not found.")); break;
+                case 0: document.getElementsByClassName("loading")[0].appendChild(document.createTextNode("Player name not found.")); break;
+                case 1: document.getElementsByClassName("loading")[0].appendChild(document.createTextNode("Player name not found.")); break;
+                case 2: document.getElementsByClassName("loading")[0].appendChild(document.createTextNode("Player ID not found.")); break;
+                case 3: document.getElementsByClassName("loading")[0].appendChild(document.createTextNode("Player ranking not found.")); break;
+                default: document.getElementsByClassName("loading")[0].appendChild(document.createTextNode("An unexpected error occured.")); break;
+            };
+            return;
+        }
         for(let column of content[0].columns)
         {
             let th = document.createElement('th');
