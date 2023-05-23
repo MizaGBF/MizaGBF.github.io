@@ -2,17 +2,17 @@
 <!--This page is automatically generated, please excuse the poor formatting-->
 <html lang="en">
 <head>
-	<title>Rosetta Online Help v10.34.12</title>
+	<title>Rosetta Online Help v10.34.13</title>
 	<meta charset="utf-8">
-	<meta name="title" content="Rosetta Online Help v10.34.12">
+	<meta name="title" content="Rosetta Online Help v10.34.13">
 	<meta name="description" content="Online Help and Command List for the Granblue Fantasy Discord bot Rosetta.">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://mizagbf.github.io/">
-	<meta property="og:title" content="Rosetta Online Help v10.34.12">
+	<meta property="og:title" content="Rosetta Online Help v10.34.13">
 	<meta property="og:description" content="Online Help and Command List for the Granblue Fantasy Discord bot Rosetta.">
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://mizagbf.github.io/">
-	<meta property="twitter:title" content="Rosetta Online Help v10.34.12">
+	<meta property="twitter:title" content="Rosetta Online Help v10.34.13">
 	<meta property="twitter:description" content="Online Help and Command List for the Granblue Fantasy Discord bot Rosetta.">
 	<link rel="icon" type="image/png" href="assets/boticon.png">
 
@@ -271,7 +271,7 @@ function openTab(evt, tabName) {
 </script></head>
 <body onload="init()">
 	<h1 style="width:630px;margin-left: auto; margin-right: auto;">
-		<img src="assets/boticon.png" alt="icon" style="vertical-align:middle;border-radius: 50%;box-shadow: 0 0 0 2pt #981cd6;width: 120px; height: 120px">&nbsp;Rosetta Online Help<br>&nbsp;<small>v10.34.12</small>
+		<img src="assets/boticon.png" alt="icon" style="vertical-align:middle;border-radius: 50%;box-shadow: 0 0 0 2pt #981cd6;width: 120px; height: 120px">&nbsp;Rosetta Online Help<br>&nbsp;<small>v10.34.13</small>
 	</h1>
 	<div class="tab">
 		<button class="tablinks" id="tab-commands" onclick="openTab(event, 'Commands')">Commands</button>
@@ -1156,6 +1156,13 @@ function openTab(evt, tabName) {
 		
 		<h2>The command didn't register what I set</h2>
 		<p>Again, the bot most likely rebooted and it didn't save in properly. Just wait and do it again.</p>
+		
+		<h2>When are the Unite and Fight rankings updated?</h2>
+		<p>They are updated in-game every 20 minutes.<br>
+        To ensure they are properly updated, the bot waits minute 3, 23 or 43 to start fetching the data.<br>
+        Commands such as <b>/gw ranking</b> will be updated almost immediatly.<br>
+        For other commands such as <b>/gw find crew</b> or <b>/gbfg ranking</b>, it will take around 7 more minutes.<br>
+        Do note the bot doesn't update everything in some periods (during breaks or crews during interlude for example).</p>
 	</div>
 	<div id="Privacy" class="tabcontent">
 		<h2>Privacy Policy</h2>
