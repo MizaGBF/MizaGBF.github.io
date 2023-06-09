@@ -170,6 +170,7 @@ a:visited {
 
 </style><script>
 var lastFilter = "all";
+var intervals = [];
 function init() {
     try {
         document.getElementById('tab-' + location.hash.substr(1).toLowerCase()).click();
@@ -191,11 +192,13 @@ function copyCommand(cmd_string) {
     div.className = 'popup';
     div.textContent = cmd_string + ' has been copied'
     document.body.appendChild(div)
-    setInterval(rmPopup, 2500, div);
+    intervals.push(setInterval(rmPopup, 2500, div));
 }
 
 function rmPopup(popup) {
     popup.parentNode.removeChild(popup);
+    clearInterval(intervals[0]);
+    intervals.shift();
 }
 
 function searchSelection(update=true) {
