@@ -141,7 +141,7 @@ function calculator()
                     ['NM95', 40, 10, 111, 54.6],
                     ['NM100', 50, 20, 168, 159],
                     ['NM150', 50, 20, 257, 246],
-                    ['NM200', 50, 30, 338, 612]
+                    ['NM200', 50, 20, 338, 612]
                 ];
                 let e = document.getElementById("calc-result");
                 e.appendChild(document.createTextNode(separate(inputs[5]) + " more Tokens will give you " + separate(box - Math.max(inputs[2], 1) + 1) + " more box(s) (Total: " + separate(box) + "), with " + separate(token) + " leftover tokens."));
@@ -192,7 +192,7 @@ function calculator()
                         ['NM95', 40, 10, 111, 54.6],
                         ['NM100', 50, 20, 168, 159],
                         ['NM150', 50, 20, 257, 246],
-                        ['NM200', 50, 30, 338, 612]
+                        ['NM200', 50, 20, 338, 612]
                     ];
                     let e = document.getElementById("calc-result");
                     e.appendChild(document.createTextNode("To reach Box " + separate(inputs[5]) + ", you need " + separate(token) + " more Tokens."));
@@ -218,11 +218,11 @@ function calculator()
             {
                 let meat = inputs[5];
                 let base = [
-                    ['NM90', 5, 260000],
+                    ['NM90', 5, 260000], // name, meat, honor
                     ['NM95', 10, 910000],
                     ['NM100', 20, 2650000],
                     ['NM150', 20, 4100000],
-                    ['NM200', 30, 10200000]
+                    ['NM200', 20, 12000000]
                 ];
                 let e = document.getElementById("calc-result");
                 e.appendChild(document.createTextNode(separate(meat) + " Meats let you host the following:"));
@@ -247,13 +247,13 @@ function calculator()
             {
                 let honor = Math.max(inputs[5] - Math.max(inputs[6], 0), 0);
                 let base = [
-                    ['EX', 0, 51000],
+                    ['EX', 0, 51000], // name, meat, honor
                     ['EX+', 0, 80800],
                     ['NM90', 5, 260000],
                     ['NM95', 10, 910000],
                     ['NM100', 20, 2650000],
                     ['NM150', 20, 4100000],
-                    ['NM200', 30, 10200000]
+                    ['NM200', 20, 12000000]
                 ];
                 let e = document.getElementById("calc-result");
                 if(inputs[5] < base[0][2])
@@ -369,11 +369,11 @@ function speed()
     if(inputs[0] == null) inputs[0] = 0;
     else inputs[0] = Math.max(inputs[0], 0);
     let fightdata = [
-        ["NM90", -30, -5, 260000, 83],
+        ["NM90", -30, -5, 260000, 83], // name, ap, meat, honor, token
         ["NM95", -40, -10, 910000, 111],
         ["NM100", -50, -20, 2650000, 168],
         ["NM150", -50, -20, 4100000, 257],
-        ["NM200", -50, -30, 10200000, 338]
+        ["NM200", -50, -20, 12000000, 338]
     ];
     let e = document.getElementById("speed-result");
     e.appendChild(document.createTextNode("Results for one hour of farming:"));
