@@ -2,18 +2,18 @@
 <!--This page is automatically generated, please excuse the poor formatting-->
 <html lang="en">
 <head>
-	<title>Rosetta Online Help v10.36.2</title>
+	<title>Rosetta Online Help v10.36.3</title>
 	<meta charset="utf-8">
-	<meta name="title" content="Rosetta Online Help v10.36.2">
+	<meta name="title" content="Rosetta Online Help v10.36.3">
 	<meta name="description" content="Online Help and Command List for the Granblue Fantasy Discord bot Rosetta.">
 	<meta name="theme-color" content="#5217b0">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://mizagbf.github.io/">
-	<meta property="og:title" content="Rosetta Online Help v10.36.2">
+	<meta property="og:title" content="Rosetta Online Help v10.36.3">
 	<meta property="og:description" content="Online Help and Command List for the Granblue Fantasy Discord bot Rosetta.">
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://mizagbf.github.io/">
-	<meta property="twitter:title" content="Rosetta Online Help v10.36.2">
+	<meta property="twitter:title" content="Rosetta Online Help v10.36.3">
 	<meta property="twitter:description" content="Online Help and Command List for the Granblue Fantasy Discord bot Rosetta.">
 	<link rel="icon" type="image/png" href="assets/boticon.png">
 
@@ -275,7 +275,7 @@ function openTab(evt, tabName) {
 </script></head>
 <body onload="init()">
 	<h1 style="width:630px;margin-left: auto; margin-right: auto;">
-		<img src="assets/boticon.png" alt="icon" style="vertical-align:middle;border-radius: 50%;box-shadow: 0 0 0 2pt #981cd6;width: 120px; height: 120px">&nbsp;Rosetta Online Help<br>&nbsp;<small>v10.36.2</small>
+		<img src="assets/boticon.png" alt="icon" style="vertical-align:middle;border-radius: 50%;box-shadow: 0 0 0 2pt #981cd6;width: 120px; height: 120px">&nbsp;Rosetta Online Help<br>&nbsp;<small>v10.36.3</small>
 	</h1>
 	<div class="tab">
 		<button class="tablinks" id="tab-commands" onclick="openTab(event, 'Commands')">Commands</button>
@@ -296,10 +296,11 @@ function openTab(evt, tabName) {
 			<button class="btn" onclick="filterSelection('moderation')" style="background: #2eced1;">Moderation</button>
 			<button class="btn" onclick="filterSelection('reminder')" style="background: #5e17e3;">Reminder</button>
 			<button class="btn" onclick="filterSelection('roles')" style="background: #17e37a;">Roles</button>
+			<button class="btn" onclick="filterSelection('search')" style="background: #a4eb34;">Search</button>
 			<button class="btn" onclick="filterSelection('sparking')" style="background: #eba834;">Sparking</button>
 		</div>
 		<br>
-		<div class="command-count"><b>146 commands</b></div>
+		<div class="command-count"><b>150 commands</b></div>
 		<br>
 		<input type="text" id="textSelection" onkeyup="searchSelection()" placeholder="Search a command">
 		<ul id="commandList">
@@ -1026,6 +1027,30 @@ function openTab(evt, tabName) {
 				<div class="command-name"><span style="display: inline-block;background: #17e37a;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.75);">Roles</span>&nbsp;<span style="display: inline-block;background: #7e9ccc;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/role remove</div>
 				<div class="command-description"><b>Description :</b>&nbsp;Remove a role from the list of self-assignable roles <b>(Mod Only)</b></div>
 				<div class="command-use"><b>Parameters :</b><br>role_name (String)&nbsp;:&nbsp;The self-assignable role you want to remove from the list
+				</div>
+			</li>
+			<li class="command search" onclick="copyCommand('/search mangadex')">
+				<div class="command-name"><span style="display: inline-block;background: #a4eb34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.75);">Search</span>&nbsp;<span style="display: inline-block;background: #7e9ccc;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/search mangadex</div>
+				<div class="command-description"><b>Description :</b>&nbsp;Search Mangadex</div>
+				<div class="command-use"><b>Parameters :</b><br><b>(Optional)</b>&nbsp;search_query (String)&nbsp;:&nbsp;Your search query
+				</div>
+			</li>
+			<li class="command search" onclick="copyCommand('/search wikipedia')">
+				<div class="command-name"><span style="display: inline-block;background: #a4eb34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.75);">Search</span>&nbsp;<span style="display: inline-block;background: #7e9ccc;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/search wikipedia</div>
+				<div class="command-description"><b>Description :</b>&nbsp;Search Wikipedia</div>
+				<div class="command-use"><b>Parameters :</b><br>search_query (String)&nbsp;:&nbsp;Your search query
+				</div>
+			</li>
+			<li class="command search" onclick="copyCommand('/search google')">
+				<div class="command-name"><span style="display: inline-block;background: #a4eb34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.75);">Search</span>&nbsp;<span style="display: inline-block;background: #7e9ccc;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/search google</div>
+				<div class="command-description"><b>Description :</b>&nbsp;Search Google</div>
+				<div class="command-use"><b>Parameters :</b><br>search_query (String)&nbsp;:&nbsp;Your search query
+				</div>
+			</li>
+			<li class="command search" onclick="copyCommand('/search dictionary')">
+				<div class="command-name"><span style="display: inline-block;background: #a4eb34;padding: 5px;text-shadow: 2px 2px 2px rgba(0,0,0,0.75);">Search</span>&nbsp;<span style="display: inline-block;background: #7e9ccc;padding: 3px;text-shadow: 2px 2px 2px rgba(0,0,0,0.5); font-size: 14px;">Slash Command</span>&nbsp;&nbsp;/search dictionary</div>
+				<div class="command-description"><b>Description :</b>&nbsp;Search the Dictionary</div>
+				<div class="command-use"><b>Parameters :</b><br>search_query (String)&nbsp;:&nbsp;Your search query
 				</div>
 			</li>
 			<li class="command sparking" onclick="copyCommand('/spark set')">
