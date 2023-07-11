@@ -7,6 +7,7 @@ const fights = [
     ["Lu Woh (Advent)", 192000000, "103481/3", "2040358000"]
 ];
 const nm95_hp = 131250000;
+const nm90_hp = 42000000;
 
 function load()
 {
@@ -37,4 +38,10 @@ function update()
         let remaining = Math.floor(1000 * (fights[i][1] - hp) / fights[i][1]) / 10;
         result.children[i].lastChild.lastChild.innerText = fights[i][0] + " - " + remaining + "% remaining";
     }
+}
+
+function nm90()
+{
+    document.getElementById("percent_range").value = parseInt(100 * nm90_hp / nm95_hp);
+    update();
 }

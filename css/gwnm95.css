@@ -1,3 +1,13 @@
+button {
+    background-color: #ffffffb0;
+    border: 2px solid #000000;
+    margin: 5px;
+    width: 110px;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
 #percent_result > * > * > * {
     color: white;
     font-size: 20px;
@@ -23,7 +33,7 @@
 
 #percent_range {
     appearance: none;
-    width: 500px;
+    width: 400px;
     height: 25px;
     background: #d3d3d3;
     outline: none;
