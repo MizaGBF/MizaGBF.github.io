@@ -248,7 +248,7 @@ function calculator()
                 let honor = Math.max(inputs[5] - Math.max(inputs[6], 0), 0);
                 let base = [
                     ['EX', 0, 51000], // name, meat, honor
-                    ['EX+', 0, 80800],
+                    ['EX+', 0, 88000],
                     ['NM90', 5, 260000],
                     ['NM95', 10, 910000],
                     ['NM100', 20, 2650000],
