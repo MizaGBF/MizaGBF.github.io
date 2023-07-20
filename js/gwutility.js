@@ -141,7 +141,7 @@ function calculator()
                     ['NM95', 40, 10, 111, 54.6],
                     ['NM100', 50, 20, 168, 159],
                     ['NM150', 50, 20, 257, 246],
-                    ['NM200', 50, 20, 338, 612]
+                    ['NM200', 50, 20, 338, 801]
                 ];
                 let e = document.getElementById("calc-result");
                 e.appendChild(document.createTextNode(separate(inputs[5]) + " more Tokens will give you " + separate(box - Math.max(inputs[2], 1) + 1) + " more box(s) (Total: " + separate(box) + "), with " + separate(token) + " leftover tokens."));
@@ -192,7 +192,7 @@ function calculator()
                         ['NM95', 40, 10, 111, 54.6],
                         ['NM100', 50, 20, 168, 159],
                         ['NM150', 50, 20, 257, 246],
-                        ['NM200', 50, 20, 338, 612]
+                        ['NM200', 50, 20, 338, 801]
                     ];
                     let e = document.getElementById("calc-result");
                     e.appendChild(document.createTextNode("To reach Box " + separate(inputs[5]) + ", you need " + separate(token) + " more Tokens."));
@@ -222,7 +222,7 @@ function calculator()
                     ['NM95', 10, 910000],
                     ['NM100', 20, 2650000],
                     ['NM150', 20, 4100000],
-                    ['NM200', 20, 12000000]
+                    ['NM200', 20, 13350387]
                 ];
                 let e = document.getElementById("calc-result");
                 e.appendChild(document.createTextNode(separate(meat) + " Meats let you host the following:"));
@@ -253,7 +253,7 @@ function calculator()
                     ['NM95', 10, 910000],
                     ['NM100', 20, 2650000],
                     ['NM150', 20, 4100000],
-                    ['NM200', 20, 12000000]
+                    ['NM200', 20, 13350387]
                 ];
                 let e = document.getElementById("calc-result");
                 if(inputs[5] < base[0][2])
@@ -373,7 +373,7 @@ function speed()
         ["NM95", -40, -10, 910000, 111],
         ["NM100", -50, -20, 2650000, 168],
         ["NM150", -50, -20, 4100000, 257],
-        ["NM200", -50, -20, 12000000, 338]
+        ["NM200", -50, -20, 13350387, 338]
     ];
     let e = document.getElementById("speed-result");
     e.appendChild(document.createTextNode("Results for one hour of farming:"));
