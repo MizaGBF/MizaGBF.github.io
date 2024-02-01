@@ -1,9 +1,5 @@
 html { 
-    background: url(../assets/background.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: #252526;
 }
 
 body {
@@ -12,16 +8,21 @@ body {
     padding: 1em;
 }
 
+#header-bg {
+    background: url(../assets/background.jpg) no-repeat center center;
+}
+
 h1 {
-    background: #30303080;
+    background-color: #00000050;
+    text-shadow: #ffffff 1px 0 5px;
     padding: 1em;
     text-align: center;
-    color: white;
+    color: #000000;
 }
 
 h2 {
     color: white;
-    background: #30303080;
+    background: #303030;
     display: inline-block;
     padding: 1em;
 }
@@ -43,7 +44,6 @@ a {
 #clock {
     display: inline-block;
     font-size: 16px;
-    color:white;
 }
 
 #category-title {
@@ -52,7 +52,7 @@ a {
 }
 
 #category {
-    background: #20202080;
+    background: #202020;
     font-size: 16px;
     padding: 1em;
     color: black;
@@ -78,13 +78,13 @@ a {
     display: inline-block;
     border: 2px solid black;
     border-radius: 5px;
-    background-color: #b8b8b8b0;
+    background-color: #b8b8b8;
     padding: 5px 5px 5px;
     text-align: center;
 }
 
 .cat-link:hover {
-    background-color: #98dde3b0;
+    background-color: #98dde3;
 }
 
 .cat-icon {
@@ -93,10 +93,10 @@ a {
     height:100px;
     width:100px;
     border-radius: 50%;
-    box-shadow: 0 0 0 2pt #000000      
+    box-shadow: 0 0 0 2pt #000000
 }
 
 #tip {
-    background-color: #000000e0;
+    background-color: #050505;
     font-size: 16px;
 }
