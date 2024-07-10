@@ -25,10 +25,10 @@
 <body onload="load()">
     <a href="index.html" class="main-link"><div id="header-bg"><h1><img src="assets/lyria.png" class="title-icon">&nbsp;Miza's GBF Resources<br><img src="assets/clock.png" id="clock-icon"><div id="clock"></div></h1></div></a>
     <h2>
-        <div id="category-title"><img src="assets/gw.png" class="cat-icon">&nbsp;<b>Unite and Fight Utility</b></div>
+        <div class="category-title"><img src="assets/gw.png" class="cat-icon">&nbsp;<b>Unite and Fight Utility</b></div>
         <details>
             <summary>Calculator</summary>
-            <div id="category">
+            <div class="category">
                 <div>
                     <label for="honor">Current Honor</label>
                     <input type="text" id="gwut6" name="honor" value="0" placeholder="Your Tokens" onkeyup="if(event.key === 'Enter') calculator();">
@@ -59,7 +59,7 @@
                 <input type="text" id="gwut5" value="1" placeholder="How much?" onkeyup="if(event.key === 'Enter') calculator();">
                 <button id="gwut1confirm" type="button" onclick="calculator()">Calculate</button>
             </div>
-            <div id="category">
+            <div class="category">
                 <div id="calc-result">
                     Please select what you want to calculate.
                 </div>
@@ -67,7 +67,7 @@
         </details>
         <details>
             <summary>Speed</summary>
-            <div id="category">
+            <div class="category">
                 <div>
                     <label for="delay">Loading Delay</label>
                     <input type="text" id="gwut10" name="delay" value="" placeholder="Loading Time" onkeyup="if(event.key === 'Enter') speed();">
@@ -94,7 +94,7 @@
                 </div>
                 <button id="gwut2confirm" type="button" onclick="speed()">Compare</button>
             </div>
-            <div id="category">
+            <div class="category">
                 <div id="speed-result">
                     Input the clear times of fights you want to compare, in seconds.
                 </div>

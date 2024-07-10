@@ -46,12 +46,12 @@ a {
     font-size: 16px;
 }
 
-#category-title {
+.category-title {
     font-size: 40px;
     padding: 1em;
 }
 
-#category {
+.category {
     background: #202020;
     font-size: 16px;
     padding: 1em;
