@@ -7,7 +7,7 @@ const fights = [
     ["Lu Woh (Advent)", 192000000, "103481/3", "2040358000"]
 ];
 const nm95_hp = 131250000;
-const nm90_hp = 42000000;
+const nm90_hp = 50000000;
 
 function load()
 {
