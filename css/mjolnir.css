@@ -1,0 +1,59 @@
+button {
+    background-color: #ffffffb0;
+    border: 2px solid #000000;
+    margin: 5px;
+    width: 110px;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.sim_text, label {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#attack {
+    background-color: #ffffffb0;
+    border: 2px solid #000000;
+    margin: 5px;
+    width: 80px;
+    font-size: 25px;
+    display: inline-block;
+}
+
+#mjolnir, #hardcap {
+  height: 25px;
+  width: 25px;
+}
+
+#modifiers {
+    appearance: none;
+    width: 400px;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#modifiers:hover {
+    background: #f0f0f0;
+}
+
+#modifiers::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #f23857;
+    cursor: pointer;
+}
+
+#modifiers::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #f23857;
+    cursor: pointer;
+}
