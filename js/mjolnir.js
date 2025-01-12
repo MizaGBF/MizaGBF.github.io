@@ -72,6 +72,6 @@ function update()
         }
     }
     if(obj.hardcap && full > 6600000) full = 6600000;
-    else if(!obj.hardcap && full > 13000000) full = 13000000;
+    else if(!obj.hardcap && full > 13100000) full = 13100000;
     document.getElementById('final').innerHTML = Math.round(full);
 }
