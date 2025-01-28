@@ -58,6 +58,29 @@ a {
     color: black;
 }
 
+table {
+    color: white;
+}
+
+.container {
+    background: #202020;
+    font-size: 16px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    padding: 5px;
+    border: 1px solid;
+}
+
 .elem {
     display: inline-block;
     vertical-align:middle;
