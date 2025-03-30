@@ -1,6 +1,6 @@
 var calc_enabled = true;
-const month_min = [80, 80, 140, 90, 60, 80, 90, 200, 100, 80, 80, 160];
-const month_max = [70, 70, 110, 80, 50, 60, 80, 150, 80, 60, 70, 120];
+const month_min = [90, 90, 140, 100, 80, 85, 110, 170, 100, 90, 90, 130];
+const month_max = [80, 70, 110, 80, 60, 75, 90, 150, 80, 50, 70, 110];
 const month_day = [31.0, 28.25, 31.0, 30.0, 31.0, 30.0, 31.0, 31.0, 30.0, 31.0, 30.0, 31.0];
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var ts = null;
