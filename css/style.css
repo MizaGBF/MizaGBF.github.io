@@ -1,125 +1,125 @@
 html { 
-    background: #252526;
+	background: #252526;
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 16px;
-    padding: 1em;
+	font-family: sans-serif;
+	font-size: 16px;
+	padding: 1em;
 }
 
 #header-bg {
-    background: url(../assets/background.jpg) no-repeat center center;
+	background: url(../assets/background.jpg) no-repeat center center;
 }
 
 h1 {
-    background-color: #00000050;
-    text-shadow: #ffffff 1px 0 5px;
-    padding: 1em;
-    text-align: center;
-    color: #000000;
+	background-color: #00000050;
+	text-shadow: #ffffff 1px 0 5px;
+	padding: 1em;
+	text-align: center;
+	color: #000000;
 }
 
 h2 {
-    color: white;
-    background: #303030;
-    display: inline-block;
-    padding: 1em;
+	color: white;
+	background: #303030;
+	display: inline-block;
+	padding: 1em;
 }
 
 p {
-    color: white;
+	color: white;
 }
 
 a {
-    color: inherit;
+	color: inherit;
 }
 
 #clock-icon {
-    max-width:24px;
-    position: relative;
-    top: 5px;
+	max-width:24px;
+	position: relative;
+	top: 5px;
 }
 
 #clock {
-    display: inline-block;
-    font-size: 16px;
+	display: inline-block;
+	font-size: 16px;
 }
 
 .category-title {
-    font-size: 40px;
-    padding: 1em;
+	font-size: 40px;
+	padding: 0.5em;
 }
 
 .category {
-    background: #202020;
-    font-size: 16px;
-    padding: 1em;
-    color: black;
+	background: #202020;
+	font-size: 16px;
+	padding: 1em;
+	color: black;
 }
 
 table {
-    color: white;
+	color: white;
 }
 
 .container {
-    background: #202020;
-    font-size: 16px;
-    color: white;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
+	background: #202020;
+	font-size: 16px;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	display: inline-block;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+	width: 100%;
+	border-collapse: collapse;
 }
 
 table, th, td {
-    padding: 5px;
-    border: 1px solid;
+	padding: 5px;
+	border: 1px solid;
 }
 
 .elem {
-    display: inline-block;
-    vertical-align:middle;
-    padding: 20px 20px 0px;
-    width: 100px;
+	display: inline-block;
+	vertical-align:middle;
+	padding: 20px 20px 0px;
+	width: 100px;
 }
 
 .title-icon {
-    vertical-align:middle;
-    height:124px;;
+	vertical-align:middle;
+	height:124px;;
 }
 
 .main-link {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .cat-link {
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: #b8b8b8;
-    padding: 5px 5px 5px;
-    text-align: center;
+	display: inline-block;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: #b8b8b8;
+	padding: 5px 5px 5px;
+	text-align: center;
 }
 
 .cat-link:hover {
-    background-color: #98dde3;
+	background-color: #98dde3;
 }
 
 .cat-icon {
-    display: inline-block;
-    vertical-align:middle;
-    height:100px;
-    width:100px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 2pt #000000
+	display: inline-block;
+	vertical-align:middle;
+	height:100px;
+	width:100px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2pt #000000
 }
 
 #tip {
-    background-color: #050505;
-    font-size: 16px;
+	background-color: #050505;
+	font-size: 16px;
 }
