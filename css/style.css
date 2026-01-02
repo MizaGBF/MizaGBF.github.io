@@ -12,6 +12,34 @@ body {
 	background: url(../assets/background.jpg) no-repeat center center;
 }
 
+.mini-links {
+	width: 100%;
+	text-align: center;
+}
+
+.mini-btn {
+	background: #2d2d30;
+	border-color: #000000;
+	border-radius: 5px;
+	border-style: solid;
+	border: none;
+	outline: none;
+	color: white;
+	display:inline-block;
+}
+
+.mini-btn:hover {
+	outline: solid #ffffff;
+}
+
+.mini-btn-icon {
+	min-width: 40px;
+	max-width: 40px;
+	min-height: 40px;
+	max-height: 40px;
+	vertical-align: middle;
+}
+
 h1 {
 	background-color: #00000050;
 	text-shadow: #ffffff 1px 0 5px;
@@ -85,7 +113,8 @@ table, th, td {
 	display: inline-block;
 	vertical-align:middle;
 	padding: 20px 20px 0px;
-	width: 100px;
+	width: 120px;
+	height: 50px;
 }
 
 .title-icon {
